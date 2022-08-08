@@ -1,50 +1,48 @@
 import React, { useState } from 'react';
 
 import TreatmentPackage from '../../components/TreatmentPackage';
-
 import pkgs from '../../packageDetails';
 
-import Container from "@mui/system/Container";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from '@material-ui/core/styles';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import { styled } from '@mui/material'
 
-const useStyles = makeStyles({
-    card: {
-        textAlign: 'center',
-        top: 0,
-        left: '50%',
-        margin: '5px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '600px',
-    },
-    cardContainer: {
-        textAlign: 'center',
-    },
-    heading: {
-        fontSize: '75px',
-    },   
+const Card = styled(Grid)({
+    textAlign: 'center',
+    top: 0,
+    left: '50%',
+    margin: '5px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '600px',
+});
+
+const CardContainer = styled(Container)({
+    textAlign: 'center',
+});
+
+const Heading = styled('h1')({
+    fontSize: '75px',
 });
 
 
 export default function Packages() {
     const [packages, setPackages] = useState(pkgs);
-    const styles = useStyles();
 
     return (
         <div>
-            <Container className={styles.cardContainer}>
-                <h1 className={styles.heading}>Packages</h1>
+            <CardContainer>
+                <Heading>Packages</Heading>
                 <Grid container alignItems="center" justify="center" spacing={2}>
                     {packages.map((p, i) => {
                         return (
-                            <Grid  className={styles.card} item key={i} xs={12} md={6}>
+                            <Card item key={i} xs={12} md={6}>
                                 <TreatmentPackage sx={{mx: "auto"}} pkg={p} />
-                            </Grid>
+                            </Card>
                         );
                     })}
                 </Grid>
-            </Container>
+            </CardContainer>
         </div>
     );
 }

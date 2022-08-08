@@ -21,21 +21,17 @@ import {
 
 import JadeLogo from '../public/logo_tweak.png'
 
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-  appbar: {
-    backgroundColor: 'black',
-    borderBottom: '.5px solid white',
-  //   boxShadow: 'none',
-  },
-});
+import { styled } from '@mui/material'
 
 const packages = ['the Warrior Goddess', 'the Rumi', 'the Storm', 'the Right of Path', 'the Tower', 'the Phoenix', 'the Muse']
 const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
 
+const AppBarStyled = styled(AppBar)({
+  backgroundColor: 'black',
+  borderBottom: '.5px solid white',
+});
+
 export default function Navbar() {
-    const styles = useStyles();
     const router = useRouter();
 
     const [anchorElNav, setAnchorElNav] = useState(null);
@@ -81,7 +77,7 @@ export default function Navbar() {
               onClick={handleCloseNavMenu}
               onMouseOver={handleOpenNavMenu}
             >
-              {page.name}
+              {page.name + 'hello'}
             </Button>
             <Menu 
               {...bindMenu(popupState)}
@@ -107,7 +103,7 @@ export default function Navbar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBarStyled position="static">
             <Container maxWidth="xl">
               <Toolbar disableGutters>
                 <Typography
@@ -224,6 +220,6 @@ export default function Navbar() {
                     </Box>
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBarStyled>
     )
 }
