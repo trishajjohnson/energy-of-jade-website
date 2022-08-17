@@ -1,9 +1,6 @@
 import React from 'react'
 import NextApp from 'next/app'
 import Layout from '../components/Layout'
-const theme = {
-  primary: 'green',
-}
 
 
 export default class App extends NextApp {

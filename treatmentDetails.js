@@ -1,121 +1,129 @@
-const treatments = [
-    {
-        id: "facial",
-        name: "Facial",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "facial"
-    },
-    {
-        id: "neckmassage",
-        name: "Neck Massage",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "neck-massage"
-    },
-    {
-        id: "crowncleanse",
-        name: "Crown Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "crown-cleanse"
-    },
-    {
-        id: "thirdeyecleanse",
-        name: "Third Eye Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "thirdeye-cleanse"
-    },
-    {
-        id: "throatcleanse",
-        name: "Throat Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "throat-cleanse"
-    },
-    {
-        id: "heartcleanse",
-        name: "Heart Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "heart-cleanse"
-    },
-    {
-        id: "solarplexuscleanse",
-        name: "Solar Plexus Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "solarplexus-cleanse"
-    },
-    {
-        id: "sacralcleanse",
-        name: "Sacral Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "sacral-cleanse"
-    },
-    {
-        id: "rootcleanse",
-        name: "Root Chakra Cleanse",
-        descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed \
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco \
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute \
-                irure dolor in reprehenderit in voluptate velit esse cillum \
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat \
-                cupidatat non proident, sunt in culpa qui officia deserunt \
-                mollit anim id est laborum.",
-        targetId: "root-cleanse"
-    },
-]
+const treatmentDetails = [
+        {
+            id: "abhyanga",
+            name: "Abhyanga",
+            descr: `Classical Ayurvedic hot oil massage.  Gentle and rhythmical
+                    massage with medicated oil. Rejuvenates and cleanses the lymphatically 
+                    and energetically.  Often performed by two therapists at one time working 
+                    in synchrony.`,
+            targetId: "abhyanga"
+        },
+        {
+            id: "shirodhara",
+            name: "Shirodhara",
+            descr: `The pouring of medicated oil over your Third-eye chakra and Ajna marma 
+                    point.  Results in a psycho-somatic balance and meditative state.  
+                    Addresses the nervous and endocrine systems, activates the pituitary 
+                    gland and enhances brain chemistry.  Awaken your intuition.`,
+            targetId: "shirodhara"
+        },
+        {
+            id: "yoni-steaming",
+            name: "Yoni Steaming",
+            descr: `Steaming the vagina with medicinal herb infused water.  Ritual used
+                    for self-care and reclamation.  Cleanses the “yoni” physically and 
+                    energetically.  Honor your womb.  Reconnect with the divine feminie within 
+                    you.  Perfect for after a break-up.`,
+            targetId: "yoni-steaming"
+        },
+        {
+            id: "nasya",
+            name: "Nasya",
+            descr: `Oiling treatment for the sinuses.  Medicated oil drops through the nose 
+                    to cleanse and open channels in order to improve flow of prana by improving 
+                    oxygenation.  Highly beneficial for brain functioning and can be 
+                    implemented in one’s self-care routine.`,
+            targetId: "nasya"
+        },
+        {
+            id: "karna-purna",
+            name: "Karna Purna",
+            descr: `Medicated liquid poured into the ears.  Improves sound perception.  
+                    Creates the feeling of being in the womb.`,
+            targetId: "karna-purna"
+        },
+        {
+            id: "netra-tarpana",
+            name: "Netra Tarpana",
+            descr: `Called “the golden vision”, cleansing the eyes with ghee “purified 
+                    butter”, nourishes the eyes and your inner vision.  A barrier made of 
+                    chickpea dough is positioned around the eyes and then filled with warm 
+                    ghee.  This enables the eye muscles to relax and soften, impurities 
+                    break free physically and energetically.  Consider all that your eyes 
+                    have seen.  Memories can be triggered when dealing with the eyes.  This 
+                    is a very powerful treatment.`,
+            targetId: "netra-tarpana"
+        },
+        {
+            id: "pinda-svedana",
+            name: "Pinda Svedana",
+            descr: `An Indian royal body treatment.  Cloth bags filled with rice and made 
+                    into balls, then soaked in very hot milk and herbs.  Massaged all over 
+                    the body, it causes you to sweat and then cool.  Wrapped up with a mylar 
+                    sheet and set to soak in the skin.  A highly rejuvenating treatment that 
+                    helps awaken cellular energy.  Stimulating and detoxifying while wrapped 
+                    up in a cocoon.  Emerge renewed and nourished.`,
+            targetId: "pinda-svedana"
+        },
+        {
+            id: "udvartana",
+            name: "Udvartana",
+            descr: `A lymphatic massage that cleanses and increases circulation.  Either 
+                    powdered medicated herbs alone or added to oil, this treatment soothes 
+                    skin irritations and improves complexion.  Performed with intention, 
+                    this is an amazing treatment for scrubbing out the “old” and replenishing 
+                    your mind, body and soul with the “new”.  Removes excess toxins in the 
+                    lymphatic system while opening channels and is performed after the skin 
+                    has been conditioned.`,
+            targetId: "udvartana"
+        },
+        {
+            id: "basti",
+            name: "Basti",
+            descr: `A chickpea dough barrier positioned around a chakra and filled with 
+                    specific medicinal oils prepared specifically for the client and their 
+                    needs. Cleansing ritual that is powerful energetically for the throat, 
+                    heart, solar plexus and sacral chakras and all the emotions that one may 
+                    find there.  Subtle, yet very powerful and effective while doing the 
+                    “work”.`,
+            targetId: "basti"
+        },
+        {
+            id: "marma-therapy",
+            name: "Marma Therapy",
+            descr: `Subtle work on the energetic marma points on the body where prana flows.  
+                    Sound, touch, aroma and herbal transdermal creams are implemented.  When 
+                    prana flows efficiently, perspectives can shift.  Memories, emotions and 
+                    trauma can be stored in these sacred maps in our bodies.  Some things you 
+                    have to experience to understand.  When a marma point is activated it 
+                    begins to pulse, so you know the treatment is working.`,
+            targetId: "marma-therapy"
+        },
+        {
+            id: "binaural-beats",
+            name: "Binaural Beats",
+            descr: `Sound therapy that creates an illusion in the brain when you listen to 
+                    two different pure tones with slightly different frequencies at the same 
+                    time in each ear with headphones.  The sound increases certain brain waves 
+                    depending on the tones used and are thought to encourage relaxation, 
+                    promote positivity and focus. Relieves anxiety.`,
+            targetId: "binaural-beats"
+        },
+        {
+            id: "massage-therapy",
+            name: "Massage Therapy",
+            descr: `Deep tissue, cranial sacral, reflexology, Swedish massage with hot towel 
+                    therapy and aromatherapy.`,
+            targetId: "massage-therapy"
+        },
+        {
+            id: "sound-therapy",
+            name: "Sound Therapy",
+            descr: `Crystal singing bowls, bells, chimes and binaural beats used in a 
+                    therapeutic way, combined with meditation and deep self reflection 
+                    techniques to improve wellbeing and activate healing.`,
+            targetId: "sound-therapy"
+        },
+    ]
 
-export default treatments;
+    export default treatmentDetails;

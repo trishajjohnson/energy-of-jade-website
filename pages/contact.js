@@ -2,54 +2,50 @@ import React from 'react';
 
 import ContactForm from '../components/ContactForm';
 
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/material';
 
-const useStyles = makeStyles({
-    headingContainer: {
-        display: 'flex',
-        // backgroundColor: 'black',
-    },
-    form: {
-        width: '50vw',
-        height: '85vh',
-    },
-    formContainer: {
-        display: 'flex',
-        flexDirection: 'column',
-    },
-    item: {
-
-    },
-    img: {
-        width: '100%',
-        height: '100%', 
-        objectFit: 'cover',
-    },
-    imgBox: {
-        width: '50vw',
-        height: '85vh',
-    },
-    questionBox: {
-        textAlign: 'center',
-        // color: 'white'
-    }
+const HeaderContainer = styled('div')({
+    display: 'flex',
 });
 
-export default function Contact() {
-    const styles = useStyles();
+const ImgContainer = styled('div')({
+    height: '85vh',
+});
+
+const Img = styled('img')({
+    width: '100%',
+    height: '100%', 
+    objectFit: 'cover',
+});
+
+const FormContainer = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center'
+});
+
+const Form = styled('div')({
+    height: '85vh',
+});
+
+
+function Contact() {
 
     return (
-        <div>
-            <div className={styles.headingContainer}>
-                <div className={styles.imgBox}>
-                    <img className={styles.img} src='/uby-yanes-ntTxsvPCbpU-unsplash.jpeg' alt='contact header image' />
-                </div>
-                <div className={styles.formContainer}>
-                    <div className={styles.form}>
+        <div >
+            <HeaderContainer sx={{ flexDirection: {xs: 'column', md: 'row'} }}>
+                <ImgContainer sx={{ width: {xs: '100%', md: '50%'} }}>
+                    <Img src='/uby-yanes-ntTxsvPCbpU-unsplash.jpeg' alt='contact header image' />
+                </ImgContainer>
+                <FormContainer sx={{ width: {xs: '100%', md: '50%'} }}>
+                    <Form>
                         <ContactForm />
-                    </div>
-                </div>
-            </div>
+                    </Form>
+                </FormContainer>
+            </HeaderContainer>
         </div>
     );
 }
+
+
+export default Contact;

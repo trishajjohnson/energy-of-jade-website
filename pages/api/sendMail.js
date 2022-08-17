@@ -1,10 +1,9 @@
 import AWS from "aws-sdk";
-import axios from "axios";
 
 const key = process.env.IAM_AWS_ACCESS_KEY_ID;
 const secretKey = process.env.IAM_AWS_SECRET_ACCESS_KEY;
 
-export default function sendMail(req, res) {
+function sendMail(req, res) {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
@@ -61,3 +60,6 @@ export default function sendMail(req, res) {
                 console.error(err, err.stack);
             });
 }
+
+
+export default sendMail;

@@ -1,7 +1,9 @@
 import { Fragment } from "react";
+
 import Image from 'next/image';
 import Head from 'next/head';
-import CssBaseline from '@mui/material/CssBaseline';
+
+import { CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import Navbar from "./Navbar";
@@ -30,7 +32,6 @@ function Layout(props) {
                 <meta name="description" content="Wellness spa website." />
                 <link rel="icon" href="/logo_tweak.png" />
             </Head>
-
             <Navbar />
 
             <main>

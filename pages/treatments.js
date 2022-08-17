@@ -1,53 +1,39 @@
 import TreatmentCard from '../components/treatmentCard';
 
-import Container from "@mui/system/Container";
-import { makeStyles } from '@material-ui/core/styles';
+import { Container } from '@mui/system';
+import { styled } from '@mui/material';
 
 import treatments from '../treatmentDetails';
 
-const useStyles = makeStyles({
-    card: {
-        textAlign: 'center',
-        top: 0,
-        left: '50%',
-        margin: '5px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '600px',
-    },
-    cardContainer: {
-        textAlign: 'center',
-    },
-    heading: {
-        fontSize: '75px',
-    },
-    title: {
-        marginTop: '100px',
-        paddingTop: '50px',
-        fontSize: '40px',
-    },
-    treatments: {
-        // color: 'white',
-    },
-    treatmentContainer: {
-        textAlign: 'center',
-    } 
+const TreatmentContainer = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'center',
+    marginBottom: 50
+});
+
+const Header = styled('h1')({
+    fontSize: '75px',
+    textAlign: 'center',
+    marginBottom: 0,
+    marginTop: 25,
 });
 
 
-export default function Treatments() {
-    const styles = useStyles();
+function Treatments() {
 
     return (
         <div>
-            <div className={styles.treatmentContainer}>
-                <h1 className={styles.heading}>Treatment Details</h1>
-                <Container className={[styles.cardContainer, styles.treatments]}>
+            <TreatmentContainer>
+                <Header>Treatment Details</Header>
+                <Container sx={{ width: {xs: 'none', md: '50%' }}}>
                     {treatments.map(t => {
                         return <TreatmentCard treatment={t} />
                     })}
                 </Container>
-            </div>
+            </TreatmentContainer>
         </div>
     );
 }
+
+export default Treatments;

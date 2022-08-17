@@ -1,70 +1,68 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import Grid from "@material-ui/core/Grid";
-import InputBase from '@mui/material/InputBase';
-import Button from "@material-ui/core/Button";
-import { makeStyles } from '@material-ui/styles';
+import { Grid, Button, Container } from "@mui/material";
+import { InputBase, styled } from '@mui/material';
 
-const useStyles = makeStyles({
-    button: {
-        border: '.5px solid black',
-        borderRadius: 3,
-        '&:hover': {
-            backgroundColor: 'black',
-            color: 'white',
-        }
-    },
-    buttonBox: {
-        width: 25,
-        marginLeft: 5,
-        marginTop: 10,
-    },
-    inputLabel: {
+const ButtonContainer = styled('div')({
+    width: 25,
+    marginTop: 10, color: 'white',
+});
+
+const ButtonStyled = styled(Button)({
+    border: '.5px solid black',
+    borderRadius: 3,
+    color: 'black',
+    '&:hover': {
+        backgroundColor: 'black',
         color: 'white',
-    },
-    inputLabelDiff: {
-        color: 'black',
-    },
-
-    input: {
-        border: '.5px solid black',
-        borderRadius: 3,
-        paddingLeft: 5,
-        lineHeight: 2,
-        '&:focus': {
-            border: '1px solid black'
-        }
-    },
-    form: {
-        width: '75%',
-        margin: '0 auto',
-    },
-    textField: {
-        marginTop: 10,
-        borderRadius: 3,
-        paddingLeft: 5
-    },
-    p: {
-        fontSize: 20,
-        marginTop: 10
-    },
-    question: {
-        fontSize: 50,
-        marginBottom: 0
-    },
-    questionBox: {
-        margin: '100px 0 50px',
-        textAlign: 'center'
-    },
-    submitted: {
-        textAlign: 'center',
-        marginTop: 250
+        border: 'none'
     }
 });
 
-export default function ContactForm() {
-    const styles = useStyles();
+const InputBaseStyled = styled(InputBase)({
+    marginTop: 10,
+    borderRadius: 3,
+    paddingLeft: 5
+});
+
+const StyledInput = styled(InputBaseStyled)({
+    border: '.5px solid black',
+    borderRadius: 3,
+    paddingLeft: 5,
+    lineHeight: 2,
+    '&:focus': {
+        border: '1px solid black'
+    }
+});
+
+const Form = styled('div')({
+    width: '75%',
+    margin: '0 auto',
+});
+
+const MessageContainer = styled('div')({
+    textAlign: 'center',
+    marginTop: 250
+});
+
+const Paragraph = styled('p')({
+    fontSize: 20,
+    marginTop: 10
+});
+
+const FormHeader = styled('h1')({
+    fontSize: 50,
+    marginBottom: 0
+});
+
+const FormHeaderContainer = styled('div')({
+    margin: '100px 0 50px',
+    textAlign: 'center'
+});
+
+
+function ContactForm() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -82,10 +80,10 @@ export default function ContactForm() {
 
     async function handleSubmit(evt) {
         evt.preventDefault();
-        // call the email API to send the info
+
+        // call the email API to send message info
         try {
             const response = await axios.post("http://localhost:3000/api/sendMail", formData);
-            console.log("response", response);
             setFormData({
                 name: formData.name,
                 email: "",
@@ -99,74 +97,71 @@ export default function ContactForm() {
 
 
     return (
-        <div>
+        <Container>
             {isSubmitted ? (
-                <div className={styles.submitted}>
+                <MessageContainer>
                     <h1>Message Sent!</h1>
-                    <p className={styles.p}>Thanks for reaching out, {formData.name}!  We'll get back to you as soon as possible.</p>
-                </div>
+                    <Paragraph>Thanks for reaching out, {formData.name}!  We'll get back to you as soon as possible.</Paragraph>
+                </MessageContainer>
             ) : (
                 <div>
-                    <div className={styles.questionBox}>
-                        <h1 className={styles.question}>Have a question?</h1>
-                        <p className={styles.p}>Let's connect!</p>
-                    </div>
-                    <form className={styles.form} onSubmit={handleSubmit}>
+                    <FormHeaderContainer>
+                        <FormHeader>Have a question?</FormHeader>
+                        <Paragraph>Let's connect!</Paragraph>
+                    </FormHeaderContainer>
+                    <Form onSubmit={handleSubmit}>
                         <Grid container justifyContent="center" direction="column">
                             <Grid item>
-                                <InputBase  
+                                <StyledInput  
                                     id="name-input"
                                     name="name"
                                     placeholder="Name"
                                     type="text"
                                     value={formData.name}
-                                    className={styles.textField} 
                                     fullWidth
                                     size="small"
                                     onChange={handleChange}
-                                    inputProps={{className: styles.input}}
                                 />
                             </Grid>
                             <Grid item>
-                                <InputBase  
+                                <StyledInput  
                                     id="email-input"
                                     name="email"
                                     placeholder="Email"
                                     type="email"
-                                    value={formData.email}
-                                    className={styles.textField} 
+                                    value={formData.email} 
                                     fullWidth 
                                     size="small"
                                     onChange={handleChange}
-                                    inputProps={{className: styles.input}}
                                 />
                             </Grid>
                             <Grid item>
-                                <InputBase  
+                                <StyledInput  
                                     id="message-input"
                                     name="message"
                                     placeholder="Message"
                                     type="text"
                                     variant="outlined"
                                     value={formData.message}
-                                    className={styles.textField} 
                                     fullWidth 
                                     multiline
                                     rows={5}
                                     size="small"
                                     onChange={handleChange}
-                                    inputProps={{className: styles.input}}
                                 />
                             </Grid>
-                            <div className={styles.buttonBox}>
-                                <Button className={styles.button} variant="outlined" type="submit">
+                            <ButtonContainer>
+                                <ButtonStyled variant="outlined" type="submit">
                                     Submit
-                                </Button>
-                            </div>
+                                </ButtonStyled>
+                            </ButtonContainer>
                         </Grid>
-                    </form>
+                    </Form>
                 </div>
             )}
-        </div>
+        </Container>
     );
 }
+
+
+export default ContactForm;

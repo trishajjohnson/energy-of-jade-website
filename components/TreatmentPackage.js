@@ -2,110 +2,95 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { 
+    Card, 
+    CardContent, 
+    CardMedia, 
+    Typography,
+    styled
+} from '@mui/material';
 
-import treatmentDetails from '../treatmentDetails';
-
-const useStyles = makeStyles({
-    card: {
-       position: 'relative',
-       maxWidth: 500, 
-       height: 250,
-       maxHeight: 500,
-       margin: 10,
-       marginLeft: 'auto',
-       marginRight: 'auto',
-       '&:hover .hover': {
-        display: 'block',
-     },
+const CardStyled = styled(Card)({
+    backgroundColor: 'black',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    textAlign: 'center',
+    marginBottom: 10,
+    '&:hover': {
+        cursor: 'pointer'
     },
-    overlay: {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        color: 'white',
-    },
-    hover: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%', 
-        height: '100%',
-        backgroundColor: 'black',
-        display: 'none',
-    },
-    ul: {
-        listStyle: 'none',
-        color: 'white',
-        margin: 0,
-        padding: 0,
-    },
-    learnMore: {
-        position:'absolute',
-        bottom: 10,
-        left: '50%',
-        transform: 'translate(-50%)',
-        color: 'white',
-        opacity: '80%',
-        '&:hover': {
-            opacity: '100%',
-            border: '.5px solid white',
-        }
-    },
-    treatP: {
-        margin: 0,
-        cursor: 'pointer',
-    },
-    anchorLink: {
-        scrollBehavior: 'smooth',
-        opacity: '75%',
-        '&:hover': {
-            fontSize: '1.1rem',
-            // textDecoration: 'underline',
-            opacity: '100%',
-        }
-    }
 });
 
+const CardContentStyled = styled(CardContent)({
+    // position: 'relative',
+    // top: '50%',
+    // left: '50%',
+    transform: 'translate(0, -150%)',
+    color: 'white',
+});
+
+const UlStyled = styled('ul')({
+    listStyle: 'none',
+    color: 'white',
+    margin: 0,
+    padding: 0,
+});
+
+const CardMediaStyled = styled(CardMedia)({
+    height: '90%',
+    objectFit: 'scale-down',
+    transform: 'translate(0, 20%)'
+    // justifyContent: 'center'
+});
+
+const CardContentHover = styled(CardContent)({
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%', 
+    height: '100%',
+    backgroundColor: 'black',
+    display: 'none',
+    // '&:hover': {
+    //     display: 'block'
+    // }
+});
+
+
 function TreatmentPackage({pkg}) {
-    const styles = useStyles();
-    console.log("package in card", pkg);
+
     return (
-     
-        <Card className={styles.card}>
-            <CardMedia
-                component="img"
-                // height="140"
-                image={pkg.img}
-                alt={pkg.name}
-            />
-            <CardContent className={styles.overlay}>
-                <Typography gutterBottom variant="h4" component="div">
-                    {pkg.name}
-                </Typography>
-            </CardContent>
-            <CardContent className={['hover', styles.hover]}>
-                <Typography gutterBottom variant="body1" component="div">
-                    <ul className={styles.ul}>
-                        {pkg.themes.map(t => {
-                            return <li className={styles.anchorLink}>{t}</li>
-                        })}
-                    </ul>
-                </Typography>
-                <CardActions>
-                    <Link href={`/packages/${pkg.id}`} passHref>
-                        <Button className={styles.learnMore} size="small">Learn More</Button>
-                    </Link>
-                </CardActions>
-            </CardContent>
-        </Card>
+        
+        <Link href={`/packages/${pkg.id}`} passHref>
+            <CardStyled sx={{ width: {xs: '100%', md: 600}, height: {xs: 250, md: 300} }}>
+                <CardMediaStyled
+                    component="img"
+                    image={pkg.img}
+                    alt={pkg.name}
+                    sx={{
+                        transform: {
+                            xs: 'translate(0, 20%)',
+                            md: 'translate(0, 15%)'
+                        }
+                    }}
+                />
+                <CardContentStyled sx={{ transform: {xs: 'translate(0, -120%)', md: 'translate(0, -150%)' } }}>
+                    <Typography gutterBottom variant="h4" component="div">
+                        {pkg.name}
+                    </Typography>
+                </CardContentStyled>
+                <CardContentHover>
+                    <Typography gutterBottom variant="body1" component="div">
+                        <UlStyled>
+                            {pkg.themes.map(t => {
+                                return <li>{t}</li>
+                            })}
+                        </UlStyled>
+                    </Typography>
+                </CardContentHover>
+            </CardStyled>
+        </Link>
     );
 }
 
