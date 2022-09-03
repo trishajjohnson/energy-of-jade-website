@@ -15,8 +15,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-// import JadeLogo from '../public/logo_tweak.png'
-
 import { styled } from '@mui/material'
 
 const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
@@ -76,7 +74,6 @@ function Navbar() {
               <IconButton>
                 <Image 
                   src="https://eojassets.s3.us-west-1.amazonaws.com/logo_tweak.png" 
-                  // src={JadeLogo} 
                   alt="Energy of Jade logo" 
                   width={50} 
                   height={50} 
@@ -140,7 +137,6 @@ function Navbar() {
               <IconButton>
                 <Image 
                   src="https://eojassets.s3.us-west-1.amazonaws.com/logo_tweak.png"
-                  // src={JadeLogo} 
                   alt="Energy of Jade logo" 
                   width={50} 
                   height={50} 
