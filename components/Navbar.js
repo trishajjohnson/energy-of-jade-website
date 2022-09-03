@@ -75,7 +75,7 @@ function Navbar() {
             >
               <IconButton>
                 <Image 
-                  src="s3://eojassets/logo_tweak.png" 
+                  src="https://eojassets.s3.us-west-1.amazonaws.com/logo_tweak.png" 
                   // src={JadeLogo} 
                   alt="Energy of Jade logo" 
                   width={50} 
@@ -139,7 +139,8 @@ function Navbar() {
             >
               <IconButton>
                 <Image 
-                  src={JadeLogo} 
+                  src="https://eojassets.s3.us-west-1.amazonaws.com/logo_tweak.png"
+                  // src={JadeLogo} 
                   alt="Energy of Jade logo" 
                   width={50} 
                   height={50} 
