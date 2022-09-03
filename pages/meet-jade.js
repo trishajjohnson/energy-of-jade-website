@@ -101,7 +101,7 @@ function About() {
                     <SubHeader>Hi, my name is</SubHeader>
                     <Header>Jade</Header>
                 </HeaderBox>
-                <ImageStyled src='meet_jade_4.jpg' /> 
+                <ImageStyled src='https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg' /> 
             </HeaderContainer>
             <BodyStyled>
                 <SectionStyled>
