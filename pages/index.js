@@ -90,7 +90,7 @@ function Home() {
             </ButtonContainer>
           </Box>
           <ImageStyled 
-            src="dominique-rivas-q3iVNEKJIyo-unsplash.jpeg" 
+            src="https://eojassets.s3.us-west-1.amazonaws.com/dominique-rivas-q3iVNEKJIyo-unsplash.jpeg" 
             sx={{
               boxShadow: '30px -30px 0px 0px rgba(67,84,80,0.80)',
               height: 300,
@@ -104,7 +104,7 @@ function Home() {
           }}
         >
           <ImageStyled 
-            src="engin-akyurt-ZbzYDboN7fg-unsplash.jpeg"
+            src="https://eojassets.s3.us-west-1.amazonaws.com/engin-akyurt-ZbzYDboN7fg-unsplash.jpeg"
             sx={{
               boxShadow: '-30px -30px 0px 0px rgba(173,155,140,0.80)',
               height: 300,
@@ -151,7 +151,7 @@ function Home() {
             </ButtonContainer>
           </Box>
           <ImageStyled 
-            src="meet_jade_4.jpg" 
+            src="https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg" 
             sx={{
               boxShadow: '30px -30px 0px 0px rgba(217,184,73,0.83)',
               height: 400,
@@ -165,7 +165,7 @@ function Home() {
           }}
         >
           <ImageStyled 
-            src="alexander-andrews-JYGnB9gTCls-unsplash.jpeg"
+            src="https://eojassets.s3.us-west-1.amazonaws.com/alexander-andrews-JYGnB9gTCls-unsplash.jpeg"
             sx={{
               boxShadow: '-30px -30px 0px 0px rgba(48,43,39,0.83)',
               height: 300,

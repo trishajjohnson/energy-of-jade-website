@@ -22,7 +22,7 @@ const HeaderContainer = styled('div')({
         to right bottom, 
         hsla(0, 0%, 0%, 0.75), 
         hsla(0, 0%, 0%, 0.2)),  
-        url("/chelsea-shapouri-r40EYKVyutI-unsplash.jpeg")`,
+        url("https://eojassets.s3.us-west-1.amazonaws.com/chelsea-shapouri-r40EYKVyutI-unsplash.jpeg")`,
     backgroundSize: 'cover',
     backgroundPosition: '0 30%',
     // backgroundAttachment: 'fixed',

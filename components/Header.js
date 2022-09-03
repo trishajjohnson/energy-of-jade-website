@@ -26,7 +26,7 @@ const HeaderStyled = styled('div')({
         to right bottom, 
         hsla(0, 0%, 0%, 0.75), 
         hsla(0, 0%, 0%, 0.2)),  
-        url("s3://eojassets/AdobeStock_232833514_resize.png")`,
+        url("https://eojassets.s3.us-west-1.amazonaws.com/AdobeStock_232833514_resize.png")`,
         // url("/AdobeStock_232833514_resize.png")`,
     backgroundSize: 'cover',
     // backgroundAttachment: 'fixed',

@@ -20,7 +20,7 @@ const HeaderContainer = styled('div')({
         to right bottom, 
         hsla(0, 0%, 0%, 0.75), 
         hsla(0, 0%, 0%, 0.2)),  
-        url("/uby-yanes-ntTxsvPCbpU-unsplash.jpeg")`,
+        url("https://eojassets.s3.us-west-1.amazonaws.com/uby-yanes-ntTxsvPCbpU-unsplash.jpeg")`,
     backgroundSize: 'cover',
     backgroundPosition: '0 70%',
     // backgroundAttachment: 'fixed',

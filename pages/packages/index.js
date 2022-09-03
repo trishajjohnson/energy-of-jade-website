@@ -3,7 +3,7 @@ import React from 'react';
 import TreatmentPackage from '../../components/TreatmentPackage';
 import pkgs from '../../packageDetails';
 
-import { Container, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const Card = styled(Grid)({
@@ -37,7 +37,7 @@ const HeaderContainer = styled('div')({
         to right bottom, 
         hsla(0, 0%, 0%, 0.75), 
         hsla(0, 0%, 0%, 0.2)),  
-        url("christin-hume-0MoF-Fe0w0A-unsplash.jpeg")`,
+        url("https://eojassets.s3.us-west-1.amazonaws.com/christin-hume-0MoF-Fe0w0A-unsplash.jpeg")`,
     backgroundSize: 'cover',
     // backgroundAttachment: 'fixed',
     backgroundPosition: 'center',

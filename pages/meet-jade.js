@@ -106,7 +106,7 @@ function About() {
             <BodyStyled>
                 <SectionStyled>
                     <ImageStyled 
-                        src='saffu-pYaKs30p9zg-unsplash.jpeg' 
+                        src='https://eojassets.s3.us-west-1.amazonaws.com/saffu-pYaKs30p9zg-unsplash.jpeg' 
                         sx={{ 
                             boxShadow: '-30px 30px 0px 0px rgba(250,220,244,0.83)',
                         }} 
@@ -135,7 +135,7 @@ function About() {
 
                     </PStyled>
                     <ImageStyled 
-                        src='nordwood-themes-FnOoRU-PYio-unsplash.jpeg' 
+                        src='https://eojassets.s3.us-west-1.amazonaws.com/nordwood-themes-FnOoRU-PYio-unsplash.jpeg' 
                         sx={{ 
                             boxShadow: '30px -30px 0px 0px rgba(184,245,223,0.83)',
                         }} 
@@ -146,7 +146,7 @@ function About() {
                 </BreakBox>
                 <SectionStyled>
                     <ImageStyled 
-                        src='natasha-holmes-jW7u8qRMClw-unsplash.jpeg' 
+                        src='https://eojassets.s3.us-west-1.amazonaws.com/natasha-holmes-jW7u8qRMClw-unsplash.jpeg' 
                         sx={{ 
                             boxShadow: '-30px 30px 0px 0px rgba(247,214,161,0.83)',
                         }} 

@@ -3,7 +3,7 @@ const packages = [
         id: 'warriorGoddess',
         name: "Warrior Goddess",
         themes: ['Rejuvenation', 'Self Care'],
-        img: '/Cleopatra.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Cleopatra.jpeg',
         descr: `The energy of The Warrior Goddess is of strength, beauty and self care.  
                 This package was designed to embody the goddess within.  Powerful self love.  
                 Connecting to your highest self and showing gratitude for your strength, 
@@ -13,7 +13,7 @@ const packages = [
         id: 'rumi',
         name: "Rumi",
         themes: ['Love', 'Connection', 'Couples', 'Showers'],
-        img: '/Rumi.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Rumi.jpeg',
         quote: `"In your light I learn how to love. In your beauty, how to make 
                 poems. You dance inside my chest where no-one sees you, but 
                 sometimes I do, and that sight becomes this art.” ― Rumi`,
@@ -29,7 +29,7 @@ const packages = [
         id: 'storm',
         name: "Storm",
         themes: ['Grief', 'Loss', 'Depression', 'Anxiety'],
-        img: '/Storm.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Storm.jpeg',
         quote: `"And once when the storm is over, you won't remember how you 
                 made it through, how you managed to survive.  You won't even 
                 be sure whether the storm is really over.  But one thing is 
@@ -50,7 +50,7 @@ const packages = [
         id: 'rightOfPassage',
         name: "Right of Passage",
         themes: ['Transition', 'Puberty', 'Marriage', 'Motherhood', 'Menopause'],
-        img: '/Right_of_Passage.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Right_of_Passage.jpeg',
         descr: `The energy of The Rite of Passage is one of transition.  
                 Maiden, Mother, Crone.  Young girls who have just become women 
                 and should be celebrated.  Falling in love for the first time. 
@@ -71,7 +71,7 @@ const packages = [
         id: 'phoenix',
         name: "Phoenix",
         themes: ['Breakup', 'Betrayal', 'Gas Lighting', 'Reclamation', 'Recovery'],
-        img: '/Phoenix.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Phoenix.jpeg',
         descr: `The energy of the Phoenix is of resurrection.  Rising from the 
                 ashes. This package was designed for someone who has just made 
                 it through something profound stronger. Ready to be renewed,  
@@ -86,7 +86,7 @@ const packages = [
         id: 'muse',
         name: "Muse",
         themes: ['Inspiration', 'Creative Blocks', 'Procrastination'],
-        img: '/Muse.jpeg',
+        img: 'https://eojassets.s3.us-west-1.amazonaws.com/Muse.jpeg',
         descr: `The energy of the Muse is of inspiration!  Do you wish to enter 
                 a flow state and can’t seem to find your way there? Are you 
                 looking for creative expression?  Struggling with 
