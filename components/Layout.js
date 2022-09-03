@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import Head from 'next/head';
 
-import { CssBaseline, styled } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 
 import Navbar from "./Navbar";
 import Footer from './Footer';

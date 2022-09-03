@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-import JadeLogo from '../public/logo_tweak.png'
+// import JadeLogo from '../public/logo_tweak.png'
 
 import { styled } from '@mui/material'
 
@@ -75,7 +75,8 @@ function Navbar() {
             >
               <IconButton>
                 <Image 
-                  src={JadeLogo} 
+                  src="s3://eojassets/logo_tweak.png" 
+                  // src={JadeLogo} 
                   alt="Energy of Jade logo" 
                   width={50} 
                   height={50} 

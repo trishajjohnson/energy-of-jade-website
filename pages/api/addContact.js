@@ -5,22 +5,17 @@ const server = process.env.MAILCHIMP_SERVER;
 const listId = process.env.LIST_ID;
 
 async function addContact(req, res) {
-  console.log("inside addContact of API");
   const email = req.body.email;
-
 
   mailchimp.setConfig({
     apiKey: apiKey,
     server: server,
   });
 
-
   const response = await mailchimp.lists.addListMember(listId, {
     email_address: email,
     status: "subscribed",
   });
-
-  console.log("response", response);
 
   const { status, detail } = response;
 

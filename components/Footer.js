@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { styled } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/Youtube';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
-import JadeLogo from '../public/logo_tweak.png'
+// import JadeLogo from '../public/logo_tweak.png'
 
 const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
 
@@ -136,7 +136,8 @@ function Footer() {
                     <BusinessLogo>
                         <IconButtonStyled>
                             <Image 
-                            src={JadeLogo} 
+                            // src={JadeLogo} 
+                            src="s3://eojassets/logo_tweak.png"
                             alt="Energy of Jade logo" 
                             width={50} 
                             height={50} 
