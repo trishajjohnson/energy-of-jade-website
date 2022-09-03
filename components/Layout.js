@@ -1,27 +1,12 @@
 import { Fragment } from "react";
 
-import Image from 'next/image';
 import Head from 'next/head';
 
-import { CssBaseline } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { CssBaseline, styled } from '@mui/material';
 
 import Navbar from "./Navbar";
+import Footer from './Footer';
 
-const Footer = styled('footer')({
-    backgroundColor: 'black',
-    color: 'white',
-    height: 200,
-    textAlign: 'center',
-});
-
-const Logo = styled('span')({
-    backgroundColor: 'white'
-});
-
-const FooterContent = styled('div')({
-    padding: 50,
-});
 
 function Layout(props) {   
     return (
@@ -38,20 +23,8 @@ function Layout(props) {
                 {props.children}
             </main>
 
-            <Footer>
-                <FooterContent>
-                <a
-                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    Powered by{' '}
-                    <Logo>
-                        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-                    </Logo>
-                    </a>
-                </FooterContent>
-            </Footer>
+            <Footer />
+                
         </Fragment>
     );
 }

@@ -2,48 +2,59 @@ import React from 'react';
 
 import ContactForm from '../components/ContactForm';
 
-import { styled } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
+const ContainerStyled = styled('div')({
+    // display: 'flex',
+    // flexDirection: 'column',
+    marginBottom: 50, 
+    alignItems: 'center'
+});
 
 const HeaderContainer = styled('div')({
     display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '70vh',
+    backgroundImage: `linear-gradient(
+        to right bottom, 
+        hsla(0, 0%, 0%, 0.75), 
+        hsla(0, 0%, 0%, 0.2)),  
+        url("/uby-yanes-ntTxsvPCbpU-unsplash.jpeg")`,
+    backgroundSize: 'cover',
+    backgroundPosition: '0 70%',
+    // backgroundAttachment: 'fixed',
 });
 
-const ImgContainer = styled('div')({
-    height: '85vh',
-});
-
-const Img = styled('img')({
-    width: '100%',
-    height: '100%', 
-    objectFit: 'cover',
+const Header = styled('h1')({
+    color: '#f7f3f2',
+    fontSize: '75px',
+    textAlign: 'center',
+    textShadow: '3px 3px 6px #171717',
 });
 
 const FormContainer = styled('div')({
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center'
-});
-
-const Form = styled('div')({
-    height: '85vh',
+    justifyContent: 'center',
+    margin: '0 auto'
 });
 
 
 function Contact() {
 
     return (
-        <div >
-            <HeaderContainer sx={{ flexDirection: {xs: 'column', md: 'row'} }}>
-                <ImgContainer sx={{ width: {xs: '100%', md: '50%'} }}>
-                    <Img src='/uby-yanes-ntTxsvPCbpU-unsplash.jpeg' alt='contact header image' />
-                </ImgContainer>
-                <FormContainer sx={{ width: {xs: '100%', md: '50%'} }}>
-                    <Form>
-                        <ContactForm />
-                    </Form>
-                </FormContainer>
+        <ContainerStyled>
+
+            <HeaderContainer>
+                <Header>Contact</Header>
             </HeaderContainer>
-        </div>
+
+            <FormContainer sx={{ width: {xs: '100%', md: '50%'} }}>   
+                <ContactForm />
+            </FormContainer>
+
+        </ContainerStyled>
+        
     );
 }
 

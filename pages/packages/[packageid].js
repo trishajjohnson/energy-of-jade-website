@@ -2,7 +2,8 @@ import { useRouter } from 'next/router';
 
 import pkgs from '../../packageDetails';
 
-import { styled, Button } from '@mui/material';
+import { Button } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 const disclaimer = `DISCLAIMER: All healing packages will be customized to the client,
                     their constitution, needs and goals  This is not a religious
@@ -63,7 +64,7 @@ const Span = styled('span')({
 
 const Description = styled('div')({
     margin: '50px auto',
-    width: '75%',
+    width: '50%',
     textAlign: 'center',
 });
 
@@ -81,7 +82,7 @@ const ButtonStyled = styled(Button)({
 });
 
 const Disclaimer = styled('div')({
-    width: '60%',
+    width: '50%',
     textAlign: 'center',
     margin: '0 auto 50px',
     fontSize: 10,
@@ -111,13 +112,13 @@ function PackageDetails() {
                     <p>{pkg.quote}</p>
                 )}
                 <p>{pkg.descr}</p>
-                <a href="https://calendly.com/energy-of-jade" target="_blank">
-                    <ButtonStyled
+                    {/* <ButtonStyled
                         size='large'
+                        href="https://calendly.com/energy-of-jade" 
+                        target="_blank"
                     >
                         Book Appointment
-                    </ButtonStyled>
-                </a>
+                    </ButtonStyled> */}
             </Description>
             <Disclaimer>
                 {disclaimer}

@@ -1,77 +1,77 @@
 import React from 'react';
 
-import { Button, styled } from '@mui/material';
+import { Button } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
 
 const ButtonStyled = styled(Button)({
-    // position: 'absolute',
-    color: '#EEC373',
+    color: 'black',
+    marginTop: 25,
+    width: '300px',
     textDecoration: 'none',
-    transform: 'translate(23%, -1000%)',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    border: '1px solid #EEC373',
+    border: '1px solid black',
     '&:hover': {
-        color: 'white',
-        border: '1px solid white'
+        backgroundColor: 'black',
+        color: 'white'
     }
 });
 
 const HeaderStyled = styled('div')({
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+    height: '70vh',
+    textAlign: 'center',
+    backgroundImage: `linear-gradient(
+        to right bottom, 
+        hsla(0, 0%, 0%, 0.75), 
+        hsla(0, 0%, 0%, 0.2)),  
+        url("/AdobeStock_232833514_resize.png")`,
+    backgroundSize: 'cover',
+    // backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
 });
 
 const HeaderText = styled('div')({
-    width: '100vw',
-    backgroundColor: 'rgba(191, 217, 210, 0.5)',
-    transform: 'translate(0, -100%)',
     display: 'flex',
     flexDirection: 'column',
-    textAlign: 'center',
-    boxShadow: '2px 2px 5px #434343',
-    borderRadius: '3px',
+    marginTop: 150
 });
 
 const HeadingTitle = styled('h1')({
-    color: 'white',
-    marginBottom: '5px',
-    textShadow: '2px 2px 5px #434343',
+    color: '#f7f3f2',
+    marginBottom: 0,
+    // marginTop: 100,
+    textShadow: '3px 3px 6px #171717',
 });
 
 const HeadingSecondary = styled('h4')({
     color: 'white',
     fontWeight: 'lighter',
+    textShadow: '2px 2px 5px #229969, 3px 3px 6px #171717',
+    textAlign: 'center',
+    marginTop: 5
 });
 
-const Video = styled('video')({
-    height: '85vh',
-    width: '100vw',
-    objectFit: 'cover',
-});
 
 function Header() {
+    
     return (
         
         <HeaderStyled>
-            <Video
-                autoPlay
-                // loop
-                muted
-                src={require('../public/jade-vid-3.mp4')}
-            />
-           
-            <HeaderText sx={{ width: {xs: '90vw', md: '50vw'}, transform: {xs: 'translate(5%, -220%)', md: 'translate(50%, -125%)'} }}>
-                <HeadingTitle sx={{ fontSize: {xs: 50, md: 100}, letterSpacing: {xs: 8, md: 14 } }}>Energy of Jade</HeadingTitle>
+            
+            <HeaderText sx={{  }}>
+                <HeadingTitle sx={{ fontSize: {xs: 50, md: 90}, letterSpacing: {xs: 8, md: 14 } }}>Energy of Jade</HeadingTitle>
                 <HeadingSecondary sx={{ fontSize: {xs: 15, md: 25 }, letterSpacing: {xs: 6, md: 14} }}>Rejuvinate.Reivent.Reclaim</HeadingSecondary>
-            </HeaderText>
-
-            <div>
-                <a href="https://calendly.com/energy-of-jade" target="_blank">
-                    <ButtonStyled size='large' sx={{ transform: {xs: 'translate(23%, -1000%)', md: 'translate(200%, -1250%)'} }}>
+                {/* <div>
+                    <ButtonStyled size='large' href="https://calendly.com/energy-of-jade" target="_blank">
                         Book Your First Appointment
                     </ButtonStyled>
-                </a>
-            </div>
+                </div> */}
+            </HeaderText>
+
+              
+           
         </HeaderStyled>
 
     );

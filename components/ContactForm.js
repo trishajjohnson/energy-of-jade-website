@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 import { Grid, Button, Container } from "@mui/material";
-import { InputBase, styled } from '@mui/material';
+import { InputBase } from '@mui/material';
+import { styled } from '@mui/material/styles';
 
 const ButtonContainer = styled('div')({
     width: 25,
@@ -36,7 +37,7 @@ const StyledInput = styled(InputBaseStyled)({
     }
 });
 
-const Form = styled('div')({
+const FormStyled = styled('form')({
     width: '75%',
     margin: '0 auto',
 });
@@ -57,7 +58,7 @@ const FormHeader = styled('h1')({
 });
 
 const FormHeaderContainer = styled('div')({
-    margin: '100px 0 50px',
+    margin: '40px 0 50px',
     textAlign: 'center'
 });
 
@@ -80,7 +81,7 @@ function ContactForm() {
 
     async function handleSubmit(evt) {
         evt.preventDefault();
-
+        console.log("submitted!");
         // call the email API to send message info
         try {
             const response = await axios.post("http://localhost:3000/api/sendMail", formData);
@@ -109,7 +110,7 @@ function ContactForm() {
                         <FormHeader>Have a question?</FormHeader>
                         <Paragraph>Let's connect!</Paragraph>
                     </FormHeaderContainer>
-                    <Form onSubmit={handleSubmit}>
+                    <FormStyled onSubmit={handleSubmit}>
                         <Grid container justifyContent="center" direction="column">
                             <Grid item>
                                 <StyledInput  
@@ -156,7 +157,7 @@ function ContactForm() {
                                 </ButtonStyled>
                             </ButtonContainer>
                         </Grid>
-                    </Form>
+                    </FormStyled>
                 </div>
             )}
         </Container>

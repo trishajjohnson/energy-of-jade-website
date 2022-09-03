@@ -23,7 +23,8 @@ const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {
 
 const AppBarStyled = styled(AppBar)({
   backgroundColor: 'black',
-  boxShadow: 'none'
+  boxShadow: 'none',
+  // position: 'fixed'
 });
 
 const MenuStyled = styled(Menu)({

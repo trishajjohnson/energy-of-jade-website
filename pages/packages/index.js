@@ -3,7 +3,8 @@ import React from 'react';
 import TreatmentPackage from '../../components/TreatmentPackage';
 import pkgs from '../../packageDetails';
 
-import { Container, Grid, styled } from "@mui/material";
+import { Container, Grid } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const Card = styled(Grid)({
     textAlign: 'center',
@@ -15,33 +16,48 @@ const Card = styled(Grid)({
     width: '600px',
 });
 
-const ContainerStyled = styled(Container)({
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    textAlign: 'center',
-    marginBottom: 50
+const ContainerStyled = styled('div')({
+    // margin: 50
 });
 
-const CardContainer = styled(Container)({
+const CardContainer = styled('div')({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
+    margin: 50
 });
 
-const Heading = styled('h1')({
+const HeaderContainer = styled('div')({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 50,
+    height: '70vh',
+    backgroundImage: `linear-gradient(
+        to right bottom, 
+        hsla(0, 0%, 0%, 0.75), 
+        hsla(0, 0%, 0%, 0.2)),  
+        url("christin-hume-0MoF-Fe0w0A-unsplash.jpeg")`,
+    backgroundSize: 'cover',
+    // backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+});
+
+const Header = styled('h1')({
+    color: '#f7f3f2',
     fontSize: '75px',
-    marginBottom: 0,
-    marginTop: 25
+    textAlign: 'center',
+    textShadow: '3px 3px 6px #171717',
 });
-
+ 
 
 function Packages() {
 
     return (
-        <div>
             <ContainerStyled>
-                <Heading>Packages</Heading>
+                <HeaderContainer>
+                    <Header>Packages</Header>
+                </HeaderContainer>
                 {/* <Grid container alignItems="center" justify="center" spacing={2}> */}
                 <CardContainer>
                     {pkgs.map((p, i) => {
@@ -54,7 +70,6 @@ function Packages() {
                 </CardContainer>
                 {/* </Grid> */}
             </ContainerStyled>
-        </div>
     );
 }
 

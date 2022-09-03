@@ -55,15 +55,15 @@ const treatmentDetails = [
             targetId: "netra-tarpana"
         },
         {
-            id: "pinda-svedana",
-            name: "Pinda Svedana",
+            id: "pinda-swedana",
+            name: "Pinda Swedana",
             descr: `An Indian royal body treatment.  Cloth bags filled with rice and made 
                     into balls, then soaked in very hot milk and herbs.  Massaged all over 
                     the body, it causes you to sweat and then cool.  Wrapped up with a mylar 
                     sheet and set to soak in the skin.  A highly rejuvenating treatment that 
                     helps awaken cellular energy.  Stimulating and detoxifying while wrapped 
                     up in a cocoon.  Emerge renewed and nourished.`,
-            targetId: "pinda-svedana"
+            targetId: "pinda-swedana"
         },
         {
             id: "udvartana",
