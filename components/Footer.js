@@ -17,13 +17,11 @@ const FooterStyled = styled('div')({
     flexDirection: 'column',
     backgroundColor: 'black',
     color: 'white',
-    height: 350,
     textAlign: 'center',
 });
 
 const TopFooterContainer = styled('div')({
     display: 'flex',
-    justifyContent: 'space-evenly',
     paddingTop: 50
 });
 
@@ -58,7 +56,6 @@ const LinkStyled = styled('a')({
 const BusinessDetailsContainer = styled('div')({
     display: 'flex',
     width: 250,
-    justifyContent: 'space-between'
 });
 
 const BusinessLogo = styled('div')({
@@ -120,19 +117,57 @@ function Footer() {
     
     return (
         <FooterStyled>
-            <TopFooterContainer>
+            <TopFooterContainer 
+                sx={{ 
+                    flexDirection: { 
+                        xs: 'column', 
+                        md: 'row' 
+                    },
+                    justifyContent: {
+                        xs: 'center',
+                        md: 'space-evenly'
+                    },
+                    margin: {
+                        xs: '0 auto 30px',
+                        md: 0
+                    }
+                }}
+            >
                 <NavLinks>
-                    <UlStyled>
+                    <UlStyled
+                        sx={{
+                            margin: {
+                                xs: '0 auto 20px'
+                            }
+                        }}
+                    >
                         {pages.map((page) => {
                             return (
-                                <LiStyled key={page.name}>
+                                <LiStyled 
+                                    sx={{
+                                        textAlign: {
+                                            xs: 'center',
+                                            md: 'left'
+                                        }
+                                    }}
+                                    key={page.name}>
                                     <LinkStyled href={`/${page.path}`}>{page.name}</LinkStyled>
                                 </LiStyled>
                             );
                         })}
                     </UlStyled>
                 </NavLinks>
-                <BusinessDetailsContainer>
+                <BusinessDetailsContainer
+                    sx={{
+                        marginBottom: {
+                            xs: 5
+                        },
+                        flexDirection: {
+                            xs: 'column',
+                            md: 'row'
+                        }
+                    }}
+                >
                     <BusinessLogo>
                         <IconButtonStyled>
                             <img 
@@ -144,7 +179,14 @@ function Footer() {
                         </IconButtonStyled>
                     </BusinessLogo>
                     <BusinessDetails>
-                        <BusinessName>
+                        <BusinessName
+                            sx={{
+                                marginTop: {
+                                    xs: 0,
+                                    md: 2.5
+                                }
+                            }}
+                        >
                             Energy of Jade
                         </BusinessName>
                         <BusinessAddress>

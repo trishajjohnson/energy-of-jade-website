@@ -22,12 +22,13 @@ const ImageStyled = styled('img')({
 });
 
 const PStyled = styled('p')({
-  margin: '0 100px',
-  width: 550
+  margin: '25px auto',
+  width: '60%'
 });
 
 const ButtonContainer = styled('div')({
   marginTop: 10,
+  marginBottom: 10
 });
 
 const DarkButtonStyled = styled(Button)({
@@ -67,7 +68,7 @@ const Box = styled('div')({
 
 const H2Styled = styled('h2')({
   color: 'white',
-  fontSize: 40,
+  // fontSize: 40,
   fontWeight: 300
 });
 
@@ -76,9 +77,24 @@ function Home() {
     <div>
       <Header />
       <ContainerStyled>
-        <SectionStyled>
+        <SectionStyled
+          sx={{
+            flexDirection: 
+              { 
+                xs: 'column', 
+                md: 'row' 
+              }
+          }}
+        >
           <Box>
-            <PStyled>
+            <PStyled
+              sx={{
+                // width: {
+                //   xs: '75%',
+                //   md: 
+                // }
+              }}
+            >
               Sacred bodywork such as massage, full body scrubs and wraps, yoni steaming, chakra cleansing, medicinal oils, healing herbs, 
               sound therapy, along with guided meditation, intentional rituals and oracle readings are some of the modalities that will be 
               used during our time together.  To learn more about the treatments I offer, click the button below.
@@ -92,23 +108,42 @@ function Home() {
           <ImageStyled 
             src="https://eojassets.s3.us-west-1.amazonaws.com/dominique-rivas-q3iVNEKJIyo-unsplash.jpeg" 
             sx={{
-              boxShadow: '30px -30px 0px 0px rgba(67,84,80,0.80)',
+              boxShadow: {
+                xs: '10px -10px 0px 0px rgba(67,84,80,0.80)',
+                md: '30px -30px 0px 0px rgba(67,84,80,0.80)'
+              },
               height: 300,
-              width: 300
+              width: 300,
+              margin: {
+                xs: '25px auto',
+                md: '180px 200px 150px 100px'
+              }
             }}  
           />
         </SectionStyled>
         <SectionStyled
           sx={{
-            backgroundColor: 'black'
+            backgroundColor: 'black',
+            flexDirection: 
+              { 
+                xs: 'column', 
+                md: 'row' 
+              }
           }}
         >
           <ImageStyled 
             src="https://eojassets.s3.us-west-1.amazonaws.com/engin-akyurt-ZbzYDboN7fg-unsplash.jpeg"
             sx={{
-              boxShadow: '-30px -30px 0px 0px rgba(173,155,140,0.80)',
+              boxShadow: {
+                xs: '-10px -10px 0px 0px rgba(173,155,140,0.80)',
+                md: '-30px -30px 0px 0px rgba(173,155,140,0.80)'
+              },
               height: 300,
-              width: 400
+              width: 300,
+              margin: {
+                xs: '25px auto',
+                md: '180px 200px 150px 100px'
+              }
             }}
           />
           <Box>
@@ -131,7 +166,11 @@ function Home() {
         </SectionStyled>
         <SectionStyled
           sx={{
-            
+            flexDirection: 
+              { 
+                xs: 'column', 
+                md: 'row' 
+              }
           }}
         >
           <Box>
@@ -153,27 +192,58 @@ function Home() {
           <ImageStyled 
             src="https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg" 
             sx={{
-              boxShadow: '30px -30px 0px 0px rgba(217,184,73,0.83)',
-              height: 400,
-              width: 300
+              boxShadow: {
+                xs: '10px -10px 0px 0px rgba(217,184,73,0.83)',
+                md: '30px -30px 0px 0px rgba(217,184,73,0.83)'
+              },
+              height: 300,
+              width: 200,
+              margin: {
+                xs: '25px auto',
+                md: '180px 200px 150px 100px'
+              }
             }}
           />
         </SectionStyled>
         <SectionStyled
           sx={{
-            backgroundColor: 'black'
+            backgroundColor: 'black',
+            flexDirection: 
+              { 
+                xs: 'column', 
+                md: 'row' 
+              }
           }}
         >
           <ImageStyled 
             src="https://eojassets.s3.us-west-1.amazonaws.com/alexander-andrews-JYGnB9gTCls-unsplash.jpeg"
             sx={{
-              boxShadow: '-30px -30px 0px 0px rgba(48,43,39,0.83)',
+              boxShadow: {
+                xs: '-10px -10px 0px 0px rgba(48,43,39,0.83)',
+                md: '-30px -30px 0px 0px rgba(48,43,39,0.83)'
+              },
               height: 300,
-              width: 300
+              width: 300,
+              margin: {
+                xs: '25px auto',
+                md: '180px 200px 150px 100px'
+              }
             }}
           />
           <Box>
-            <H2Styled>Question or Comment?</H2Styled>
+            <H2Styled
+              sx={{
+                fontSize: {
+                  xs: 35,
+                  md: 40
+                },
+                marginBottom: {
+                  xs: 0
+                }
+              }}
+            >
+              Question or Comment?
+            </H2Styled>
             <PStyled
               sx={{
                 color: 'white',
@@ -190,7 +260,12 @@ function Home() {
         </SectionStyled>
         <SectionStyled
           sx={{
-            justifyContent: 'center'
+            justifyContent: 'center',
+            flexDirection: 
+              { 
+                xs: 'column', 
+                md: 'row' 
+              }
           }}
         >
           <Box

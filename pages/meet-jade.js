@@ -6,7 +6,6 @@ import { styled } from "@mui/material/styles";
 const HeaderContainer = styled('div')({
     display: 'flex',
     alignItems: 'center',
-    alignContent: 'center',
     justifyContent: 'center',
     paddingBottom: 30,
     height: '70vh',
@@ -22,9 +21,7 @@ const HeaderBox = styled('div')({
     flexDirection: 'column',
     alignItems: 'center',
     alignContent: 'center',
-    textAlign: 'center',
-    marginRight: 100,
-    marginTop: 75,
+    textAlign: 'center'
 });
 
 const Header = styled('h1')({
@@ -39,9 +36,7 @@ const Header = styled('h1')({
 
 const SubHeader = styled('h3')({
     color: '#f7f3f2',
-    fontSize: 24,
     fontWeight: 100,
-    letterSpacing: 18,
     textAlign: 'center',
     margin: 0,
     paddingLeft: 15,
@@ -50,9 +45,7 @@ const SubHeader = styled('h3')({
 
 
 const ImageStyled = styled('img')({
-    width: 300,
-    height: 400,
-    boxShadow: '30px 30px 0px 0px rgba(217,184,73,0.83)',
+    margin: '25px auto'
 });
 
 const BodyStyled = styled('div')({
@@ -71,15 +64,13 @@ const SectionStyled = styled('div')({
 });
 
 const PStyled = styled('p')({
-    // alignSelf: 'flex-start',
     margin: '0 25px',
-    width: 650
+    width: '60%',
+    textAlign: 'center'
 });
 
 const BreakBox = styled('div')({
-    margin: '0 auto',
-    paddingTop: 50,
-    paddingBottom: 50
+    margin: '0 auto'
 });
 
 const HrStyled = styled('hr')({
@@ -88,7 +79,8 @@ const HrStyled = styled('hr')({
 
 const H2Styled = styled('h2')({
     fontSize: 35,
-    fontWeight: 100
+    fontWeight: 100,
+    margin: '0 auto'
 });
 
  
@@ -96,22 +88,96 @@ function About() {
 
     return (
         <div>
-            <HeaderContainer>
-                <HeaderBox>
-                    <SubHeader>Hi, my name is</SubHeader>
-                    <Header>Jade</Header>
+            <HeaderContainer
+                sx={{
+                    flexDirection: {
+                        xs: 'column',
+                        md: 'row'
+                    }
+                }}
+            >
+                <HeaderBox
+                    sx={{
+                        margin: {
+                            xs: '0 auto',
+                            // md: '75px 100px 0 75px'
+                        }
+                    }}
+                >
+                    <SubHeader
+                        sx={{
+                            fontSize: {
+                                xs: 18,
+                                md: 24
+                            },
+                            letterSpacing: {
+                                xs: 8,
+                                md: 18
+                            }
+                        }}
+                    >Hi, my name is</SubHeader>
+                    <Header
+                        sx={{
+                            fontSize: {
+                                xs: 100,
+                                md: 200
+                            }
+                        }}
+                    >
+                        Jade
+                    </Header>
                 </HeaderBox>
-                <ImageStyled src='https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg' /> 
+                <ImageStyled 
+                    src='https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg'
+                    sx={{
+                        boxShadow: {
+                            xs: '10px 10px 0px 0px rgba(217,184,73,0.83)',
+                            md: '30px 30px 0px 0px rgba(217,184,73,0.83)'
+                        },
+                        height: {
+                            xs: 300,
+                            md: 400
+                        },
+                        width: {
+                            xs: 200,
+                            md: 300
+                        }
+                    }}
+                /> 
             </HeaderContainer>
             <BodyStyled>
-                <SectionStyled>
+                <SectionStyled
+                    sx={{
+                        flexDirection: {
+                            xs: 'column',
+                            md: 'row'
+                        }
+                    }}
+                >
                     <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/saffu-pYaKs30p9zg-unsplash.jpeg' 
                         sx={{ 
-                            boxShadow: '-30px 30px 0px 0px rgba(250,220,244,0.83)',
+                            boxShadow: {
+                                xs: '-10px 10px 0px 0px rgba(250,220,244,0.83)',
+                                md: '-30px 30px 0px 0px rgba(250,220,244,0.83)'
+                            },
+                            height: {
+                                md: 400
+                            },
+                            width: {
+                                xs: '100%',
+                                md: 300
+                            }
                         }} 
                     />
-                    <PStyled>
+                    <PStyled
+                        sx={{
+                            width: {
+                                xs: '100%',
+                                md: '60%'
+                            }
+                        }}
+                    >
                         I am Jade and I have been a healer for 20 years.  I studied Massage and Reiki and have worked in spas all over California.  
                         It wasn’t until I found and studied Ayurveda, that I went from surviving to thriving.  I changed.  There had 
                         been a shift in perspective.  Betrayal, rejection and heartbreak became blessings.  Layer after layer was peeled 
@@ -119,11 +185,36 @@ function About() {
                         resentments and forgive.  What a relief!  I had hope.  I was bursting with enthusiasm and inspiration!
                     </PStyled>
                 </SectionStyled>
-                <BreakBox>
+                <BreakBox
+                    sx={{
+                        paddingTop: {
+                            xs: 0,
+                            md: 10
+                        },
+                        paddingBottom: {
+                            xs: 0,
+                            md: 10
+                        }
+                    }}
+                >
                     <HrStyled/>
                 </BreakBox>
-                <SectionStyled>
-                    <PStyled>
+                <SectionStyled
+                    sx={{
+                        flexDirection: {
+                            xs: 'column',
+                            md: 'row'
+                        }
+                    }}
+                >
+                    <PStyled
+                        sx={{
+                            width: {
+                                xs: '100%',
+                                md: '60%'
+                            }
+                        }}
+                    >
                         Like you, I am no stranger to life’s challenges.  The struggle is real. I have overcome extreme clinical 
                         depression, addiction, self destructive patterns and toxic relationships. Because of that, I know my strength.  
                         I came to the place where I had to tear my life down in order to build it back up.  A part of me had to die in order 
@@ -137,21 +228,66 @@ function About() {
                     <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/nordwood-themes-FnOoRU-PYio-unsplash.jpeg' 
                         sx={{ 
-                            boxShadow: '30px -30px 0px 0px rgba(184,245,223,0.83)',
+                            boxShadow: {
+                                xs: '10px -10px 0px 0px rgba(184,245,223,0.83)',
+                                md: '30px -30px 0px 0px rgba(184,245,223,0.83)'
+                            },
+                            height: {
+                                md: 400
+                            },
+                            width: {
+                                xs: '100%',
+                                md: 300
+                            }
                         }} 
                     />
                 </SectionStyled>
-                <BreakBox>
+                <BreakBox
+                    sx={{
+                        paddingTop: {
+                            xs: 0,
+                            md: 10
+                        },
+                        paddingBottom: {
+                            xs: 0,
+                            md: 10
+                        }
+                    }}
+                >
                     <HrStyled />
                 </BreakBox>
-                <SectionStyled>
+                <SectionStyled
+                    sx={{
+                        flexDirection: {
+                            xs: 'column',
+                            md: 'row'
+                        }
+                    }}
+                >
                     <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/natasha-holmes-jW7u8qRMClw-unsplash.jpeg' 
                         sx={{ 
-                            boxShadow: '-30px 30px 0px 0px rgba(247,214,161,0.83)',
+                            boxShadow: {
+                                xs: '-10px 10px 0px 0px rgba(247,214,161,0.83)',
+                                md: '-30px 30px 0px 0px rgba(247,214,161,0.83)'
+                            },
+                            height: {
+                                md: 400
+                            },
+                            width: {
+                                xs: '100%',
+                                md: 300
+                            }
                         }} 
                     />
-                    <PStyled>
+                    <PStyled
+                        sx={{
+                            width: {
+                                xs: '100%',
+                                md: '60%'
+                            }
+                        }}
+                    >
                         I created Energy of Jade for those who want to connect to Source and to reconnect with themselves.  For the 
                         broken hearted and for those who want to reclaim what has been lost.  A person can have great success with 
                         these ancient healing practices in all stages of life.  One may find it helpful in reflection, self awareness 
@@ -159,10 +295,29 @@ function About() {
                         you treat yourself…self love and care.  Invest in yourself, you are worth it!
                     </PStyled>
                 </SectionStyled>
-                <BreakBox>
+                <BreakBox
+                    sx={{
+                        paddingTop: {
+                            xs: 0,
+                            md: 10
+                        },
+                        paddingBottom: {
+                            xs: 0,
+                            md: 10
+                        }
+                    }}
+                >
                     <HrStyled />
                 </BreakBox>
-                <SectionStyled sx={{ justifyContent: 'center' }}>
+                <SectionStyled
+                    sx={{
+                        flexDirection: {
+                            xs: 'column',
+                            md: 'row'
+                        },
+                        justifyContent: 'center'
+                    }}
+                >
                     <H2Styled><em>Everything is energy.   Raise your vibration.</em></H2Styled>
                 </SectionStyled>
             </BodyStyled>
