@@ -132,7 +132,7 @@ function Home() {
           }}
         >
           <ImageStyled 
-            src="https://eojassets.s3.us-west-1.amazonaws.com/engin-akyurt-ZbzYDboN7fg-unsplash.jpeg"
+            src="https://eojassets.s3.us-west-1.amazonaws.com/AdobeStock_294392274+(1).jpeg"
             sx={{
               boxShadow: {
                 xs: '-10px -10px 0px 0px rgba(173,155,140,0.80)',
