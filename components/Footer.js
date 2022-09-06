@@ -135,7 +135,7 @@ function Footer() {
                 <BusinessDetailsContainer>
                     <BusinessLogo>
                         <IconButtonStyled>
-                            <Image 
+                            <img 
                             src="https://eojassets.s3.us-west-1.amazonaws.com/logo_tweak.png"
                             alt="Energy of Jade logo" 
                             width={50} 
