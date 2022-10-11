@@ -22,7 +22,6 @@ const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {
 const AppBarStyled = styled(AppBar)({
   backgroundColor: 'black',
   boxShadow: 'none',
-  // position: 'fixed'
 });
 
 const MenuStyled = styled(Menu)({
@@ -141,6 +140,7 @@ function Navbar() {
                   width={50} 
                   height={50} 
                 />
+
               </IconButton>
             </Typography>
 

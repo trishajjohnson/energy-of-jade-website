@@ -5,8 +5,6 @@ import ContactForm from '../components/ContactForm';
 import { styled } from '@mui/material/styles';
 
 const ContainerStyled = styled('div')({
-    // display: 'flex',
-    // flexDirection: 'column',
     marginBottom: 50, 
     alignItems: 'center'
 });
@@ -23,7 +21,6 @@ const HeaderContainer = styled('div')({
         url("https://eojassets.s3.us-west-1.amazonaws.com/uby-yanes-ntTxsvPCbpU-unsplash.jpeg")`,
     backgroundSize: 'cover',
     backgroundPosition: '0 70%',
-    // backgroundAttachment: 'fixed',
 });
 
 const Header = styled('h1')({

@@ -23,9 +23,6 @@ const CardStyled = styled(Card)({
 });
 
 const CardContentStyled = styled(CardContent)({
-    // position: 'relative',
-    // top: '50%',
-    // left: '50%',
     transform: 'translate(0, -150%)',
     color: 'white',
 });
@@ -41,7 +38,6 @@ const CardMediaStyled = styled(CardMedia)({
     height: '90%',
     objectFit: 'scale-down',
     transform: 'translate(0, 20%)'
-    // justifyContent: 'center'
 });
 
 const CardContentHover = styled(CardContent)({
@@ -51,10 +47,7 @@ const CardContentHover = styled(CardContent)({
     width: '100%', 
     height: '100%',
     backgroundColor: 'black',
-    display: 'none',
-    // '&:hover': {
-    //     display: 'block'
-    // }
+    display: 'none'
 });
 
 

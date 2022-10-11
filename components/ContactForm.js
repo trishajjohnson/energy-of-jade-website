@@ -85,6 +85,7 @@ function ContactForm() {
         // call the email API to send message info
         try {
             const response = await axios.post("http://localhost:3000/api/sendMail", formData);
+            console.log("response", response);
             setFormData({
                 name: formData.name,
                 email: "",

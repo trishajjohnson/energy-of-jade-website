@@ -5,8 +5,8 @@ import pkgs from '../../packageDetails';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const disclaimer = `DISCLAIMER: All healing packages will be customized to the client,
-                    their constitution, needs and goals  This is not a religious
+const disclaimer = `All healing packages will be customized to the client,
+                    their constitution, needs and goals.  This is not a religious
                     practice, it is a spiritual one.  We honor the individual,
                     their thoughts, emotions and their personal experience.
                     Our goal is to connect spiritually, channel our highest self,
@@ -34,7 +34,6 @@ const Header = styled('div')({
     width: '100vw',
     height: '65vh',
     textAlign: 'center',
-    // marginTop: '.5px'
 });
 
 const HeaderImg = styled('img')({
@@ -57,22 +56,17 @@ const HeadingTitle = styled('h1')({
     textShadow: '2px 2px 5px rgba(245, 245, 245, 0.29)',
 });
 
-const Span = styled('span')({
-    fontFamily: 'Cedarville Cursive, cursive',
-    color: '#27c47e',
-});
 
 const Description = styled('div')({
     margin: '50px auto',
     width: '50%',
-    textAlign: 'center',
 });
 
 const ButtonStyled = styled(Button)({
-    color: 'black',
+    color: 'white',
     border: '1px solid black',
     borderRadius: 2,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     '&:hover': {
         color: 'white',
         border: '1px solid black',
@@ -81,12 +75,17 @@ const ButtonStyled = styled(Button)({
     }
 });
 
+const ButtonContainer = styled('div')({
+    display: 'flex',
+    textAlign: 'center',
+    justifyContent: 'center',
+    marginTop: 10,
+    marginBottom: 10
+});
+
 const Disclaimer = styled('div')({
     width: '50%',
-    textAlign: 'center',
-    margin: '0 auto 50px',
-    fontSize: 10,
-    fontStyle: 'italic'
+    margin: '0 auto 50px'
 });
 
 
@@ -104,7 +103,7 @@ function PackageDetails() {
             
             <Header>
                 <HeaderImg src={pkg.img} alt={pkg.name} />
-                <HeadingTitle sx={{ fontSize: {xs: 40, md: 52}, top: {xs: '85%', md: '80%'} }}><Span sx={{ fontSize: {xs: 35, md: 40} }}>the</Span>{pkg.name}</HeadingTitle>
+                <HeadingTitle sx={{ fontSize: {xs: 40, md: 52}, top: {xs: '85%', md: '80%'} }}>{pkg.name}</HeadingTitle>
             </Header>
 
             <Description>
@@ -112,18 +111,21 @@ function PackageDetails() {
                     <p>{pkg.quote}</p>
                 )}
                 <p>{pkg.descr}</p>
-                    {/* <ButtonStyled
-                        size='large'
-                        href="https://calendly.com/energy-of-jade" 
-                        target="_blank"
-                    >
-                        Book Appointment
-                    </ButtonStyled> */}
+                    
             </Description>
             <Disclaimer>
                 {disclaimer}
             </Disclaimer>
-
+            
+            <ButtonContainer>
+                <ButtonStyled
+                    size='large'
+                    href="https://calendly.com/energy-of-jade" 
+                    target="_blank"
+                >
+                    Book Appointment
+                </ButtonStyled>
+            </ButtonContainer>
         </div>
        
     )

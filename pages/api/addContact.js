@@ -1,4 +1,5 @@
 const mailchimp = require("@mailchimp/mailchimp_marketing");
+const md5 = require("md5");
 
 const apiKey = process.env.MAILCHIMP_API_KEY;
 const server = process.env.MAILCHIMP_SERVER;
@@ -11,25 +12,32 @@ async function addContact(req, res) {
     apiKey: apiKey,
     server: server,
   });
+  
+  const subscribers = await mailchimp.lists.getListMembersInfo(listId);
+  const member = subscribers.members.filter(member => member.email_address === email);
 
-  const response = await mailchimp.lists.addListMember(listId, {
-    email_address: email,
-    status: "subscribed",
-  });
+  if(member.length === 0) {
+    const response = await mailchimp.lists.addListMember(listId, {
+      email_address: email,
+      status: "subscribed"
+    });
 
-  const { status, detail } = response;
-
-  if(status !== "subscribed") {
-    console.error("Error: ", { status, detail });
-
-    return { status: "Error", detail: "Unable to add contact." };
+    res.status(200).json({ status: response.status, detail: "User successfully subscribed." })
   }
 
-  console.log(
-    `Successfully added contact as an audience member. The contact's id is ${response.id}.`
-  );
+  else if(member[0].status === "unsubscribed") {
+    const subscriberHash = md5(email);
+    const response = await mailchimp.lists.updateListMember(listId, subscriberHash, {
+      status: "subscribed"
+    });
+    console.log("response for member update", response);
+    res.status(200).json({ status: "subscribed", detail: "User successfully subscribed." })
+  }
 
-  return { status: "Success", detail: "Contact successfully added." };
+  else if(member[0].status === "subscribed") {
+    console.log("already subscribed backend");
+    res.json({ status: "already subscribed", detail: "You are already subscribed." })
+  }
 }
 
 export default addContact;

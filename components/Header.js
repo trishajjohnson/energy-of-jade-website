@@ -27,22 +27,19 @@ const HeaderStyled = styled('div')({
         hsla(0, 0%, 0%, 0.75), 
         hsla(0, 0%, 0%, 0.2)),  
         url("https://eojassets.s3.us-west-1.amazonaws.com/AdobeStock_232833514_resize.png")`,
-        // url("/AdobeStock_232833514_resize.png")`,
     backgroundSize: 'cover',
-    // backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
 });
 
 const HeaderText = styled('div')({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: 150
+    marginTop: 75
 });
 
 const HeadingTitle = styled('h1')({
     color: '#f7f3f2',
     marginBottom: 0,
-    // marginTop: 100,
     textShadow: '3px 3px 6px #171717',
 });
 
@@ -64,11 +61,11 @@ function Header() {
             <HeaderText sx={{  }}>
                 <HeadingTitle sx={{ fontSize: {xs: 50, md: 90}, letterSpacing: {xs: 8, md: 14 } }}>Energy of Jade</HeadingTitle>
                 <HeadingSecondary sx={{ fontSize: {xs: 15, md: 25 }, letterSpacing: {xs: 6, md: 14} }}>Rejuvinate.Reivent.Reclaim</HeadingSecondary>
-                {/* <div>
+                <div>
                     <ButtonStyled size='large' href="https://calendly.com/energy-of-jade" target="_blank">
                         Book Your First Appointment
                     </ButtonStyled>
-                </div> */}
+                </div>
             </HeaderText>
 
               

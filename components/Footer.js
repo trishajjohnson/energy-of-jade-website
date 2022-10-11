@@ -1,14 +1,11 @@
 import React from 'react';
-import Image from 'next/image'
 
 import { styled } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
-// import JadeLogo from '../public/logo_tweak.png'
 
 const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
 
@@ -28,6 +25,7 @@ const TopFooterContainer = styled('div')({
 const BottomFooterContainer = styled('div')({
     display: 'flex',
     flexDirection: 'column',
+    marginBottom: 25
 });
 
 const NavLinks = styled('div')({
@@ -98,7 +96,7 @@ const SocialHeader = styled('h1')({
 
 const SocialIcons = styled('div')({
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'center'
 });
 
 const CopyrightIconStyled = styled(CopyrightIcon)({
@@ -189,14 +187,14 @@ function Footer() {
                         >
                             Energy of Jade
                         </BusinessName>
-                        <BusinessAddress>
+                        {/* <BusinessAddress>
                             1234 Main Street
-                        </BusinessAddress>
+                        </BusinessAddress> */}
                         <BusinessAddress>
                             Santa Barbara, CA 93109
                         </BusinessAddress>
                         <BusinessAddress>
-                            (123) 456-7890
+                            (805) 668-4411
                         </BusinessAddress>
                         
                     </BusinessDetails>
@@ -207,18 +205,17 @@ function Footer() {
                             FOLLOW US
                         </SocialHeader>
                         <SocialIcons>
-                            <a href="https://www.instagram.com/"><InstagramIcon sx={{color: '#F9F9F9'}} fontSize='medium' /></a>
-                            <a href="https://www.youtube.com/"><YouTubeIcon sx={{color: '#F9F9F9'}} fontSize='medium' /></a>
-                            <a href="https://www.facebook.com/"><FacebookIcon sx={{color: '#F9F9F9'}} fontSize='medium' /></a>
+                            <a href="https://www.instagram.com/"><InstagramIcon sx={{color: '#F9F9F9', marginRight: 1}} fontSize='medium' /></a>
+                            <a href="https://www.facebook.com/"><FacebookIcon sx={{color: '#F9F9F9', marginLeft: 1}} fontSize='medium' /></a>
                         </SocialIcons>
                 </SociaMediaContainer>
             </TopFooterContainer>
             <BottomFooterContainer>
-            <Copyright>
-                <PStyled>Copyright</PStyled>
-                <PStyled><CopyrightIconStyled fontSize='small' /></PStyled>
-                <PStyled>2022 Energy of Jade</PStyled>
-            </Copyright>
+                <Copyright>
+                    <PStyled>Copyright</PStyled>
+                    <PStyled><CopyrightIconStyled fontSize='small' /></PStyled>
+                    <PStyled>2022 Energy of Jade</PStyled>
+                </Copyright>
             </BottomFooterContainer>
         </FooterStyled>
     );

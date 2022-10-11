@@ -10,12 +10,16 @@ const ContainerStyled = styled('div')({
 
 const MessageContainer = styled('div')({
     textAlign: 'center',
-    marginTop: 250
+    marginTop: 25
 });
 
 const Paragraph = styled('p')({
     fontSize: 20,
-    marginTop: 10
+    fontWeight: 100,
+    marginTop: 10,
+    width: {
+        md: 700
+    }
 });
 
 const InputBaseStyled = styled(InputBase)({
@@ -61,7 +65,7 @@ const ButtonStyled = styled(Button)({
 });
 
 const ErrorStyled = styled('div')({
-    backgroundColor: 'red',
+    backgroundColor: '#f7a4a1',
 });
 
 const H2Styled = styled('h2')({
@@ -69,12 +73,7 @@ const H2Styled = styled('h2')({
     fontSize: 40,
     fontWeight: 300,
     marginTop: 0
-  });
-
-  const PStyled = styled('p')({
-    margin: '0 25px',
-    width: 650
-  });
+});
 
 
 function SubscribeForm() {
@@ -100,13 +99,13 @@ function SubscribeForm() {
         try {
             const response = await axios.post("http://localhost:3000/api/addContact", formData);
             console.log("response in frontend", response);
-            if(response.status === "Success") {
+            if(response.data.status === "subscribed") {
                 setFormData({
                     email: ""
                 });
                 setIsSubmitted(true);
             } else {
-                setErrors([response.detail]);
+                setErrors([response.data.detail]);
             }
         } catch(error) {
             console.log("error", error);
@@ -136,9 +135,9 @@ function SubscribeForm() {
                     >
                         Let's Stay Connected!
                     </H2Styled>
-                    <PStyled>
+                    <Paragraph>
                         Keep up to date on what's new at Energy of Jade, specials, new packages and treatments, giveaways and much more.
-                    </PStyled>
+                    </Paragraph>
                     {errors.map(error => {
                         return <ErrorStyled>{error}</ErrorStyled>
                         

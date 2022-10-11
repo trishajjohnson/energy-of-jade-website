@@ -25,7 +25,6 @@ const HeaderContainer = styled('div')({
         url("https://eojassets.s3.us-west-1.amazonaws.com/chelsea-shapouri-r40EYKVyutI-unsplash.jpeg")`,
     backgroundSize: 'cover',
     backgroundPosition: '0 30%',
-    // backgroundAttachment: 'fixed',
 });
 
 const Header = styled('h1')({
