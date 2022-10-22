@@ -5,6 +5,8 @@ import { Grid, Button, Container } from "@mui/material";
 import { InputBase } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
+const BASE_URL = process.env.BASE_URL;
+
 const ButtonContainer = styled('div')({
     width: 25,
     marginTop: 10, color: 'white',
@@ -84,7 +86,7 @@ function ContactForm() {
         console.log("submitted!");
         // call the email API to send message info
         try {
-            const response = await axios.post("http://localhost:3000/api/sendMail", formData);
+            const response = await axios.post(`${BASE_URL}/api/sendMail`, formData);
             console.log("response", response);
             setFormData({
                 name: formData.name,

@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Grid, Button, InputBase } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
+const BASE_URL = process.env.BASE_URL;
+
 const ContainerStyled = styled('div')({
 
 });
@@ -97,7 +99,7 @@ function SubscribeForm() {
         console.log("You just subscribed!");
         // call the email API to add email to subscribe contact list.
         try {
-            const response = await axios.post("http://localhost:3000/api/addContact", formData);
+            const response = await axios.post(`${BASE_URL}/api/addContact`, formData);
             console.log("response in frontend", response);
             if(response.data.status === "subscribed") {
                 setFormData({

@@ -4,7 +4,6 @@ const key = process.env.IAM_AWS_ACCESS_KEY_ID;
 const secretKey = process.env.IAM_AWS_SECRET_ACCESS_KEY;
 
 function sendMail(req, res) {
-    console.log("inside sendMail");
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message;
