@@ -2,8 +2,8 @@ const treatmentDetails = [
         {
             id: "abhyanga",
             name: "Abhyanga",
-            descr: `Classical Ayurvedic hot oil massage.  Gentle and rhythmical
-                    massage with medicated oil. Rejuvenates and cleanses the lymphatically 
+            descr: `Classic Ayurvedic hot oil massage.  Gentle and rhythmical
+                    massage with medicated oil. Rejuvenates and cleanses lymphatically 
                     and energetically.  Often performed by two therapists at one time working 
                     in synchrony.`,
             targetId: "abhyanga"
@@ -46,7 +46,7 @@ const treatmentDetails = [
             id: "netra-tarpana",
             name: "Netra Tarpana",
             descr: `Called “the golden vision”, cleansing the eyes with ghee “purified 
-                    butter”, nourishes the eyes and your inner vision.  A barrier made of 
+                    butter” nourishes the eyes and your inner vision.  A barrier made of 
                     chickpea dough is positioned around the eyes and then filled with warm 
                     ghee.  This enables the eye muscles to relax and soften, impurities 
                     break free physically and energetically.  Consider all that your eyes 
@@ -57,11 +57,11 @@ const treatmentDetails = [
         {
             id: "pinda-swedana",
             name: "Pinda Swedana",
-            descr: `An Indian royal body treatment.  Cloth bags filled with rice and made 
-                    into balls, then soaked in very hot milk and herbs.  Massaged all over 
-                    the body, it causes you to sweat and then cool.  Wrapped up with a mylar 
+            descr: `An Indian royal body treatment. Cloth bags filled with rice and made 
+                    into balls, then soaked in very hot milk and herbs are massaged all over 
+                    the body, causing you to sweat and then cool, then wrapped up with a mylar 
                     sheet and set to soak in the skin.  A highly rejuvenating treatment that 
-                    helps awaken cellular energy.  Stimulating and detoxifying while wrapped 
+                    helps awaken cellular energy, stimulating and detoxifying while wrapped 
                     up in a cocoon.  Emerge renewed and nourished.`,
             targetId: "pinda-swedana"
         },

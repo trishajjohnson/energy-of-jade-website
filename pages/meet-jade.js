@@ -418,12 +418,12 @@ function About() {
                             }
                         }}
                     >
-                        Ancient Ayurvedic wisdom used to design energetic healing treatments and rituals for the mind, body 
+                        Ancient Ayurvedic wisdom is used to design energetic healing treatments and rituals for the mind, body 
                         and soul.  Sacred bodywork such as massage, full body scrubs and wraps, yoni steaming, chakra cleansing, 
                         medicinal oils, healing herbs, sound therapy, along with guided meditation, intentional rituals and oracle 
                         readings are some of the modalities that will be used during our time together.  Shirodhara will be included 
                         in all packages in order to awaken and cleanse your third eye to enhance your intuition in your pursuit to
-                        move forward.  Healthy catered lunch is included as well as dosha specific herbal teas and organic fresh juice.
+                        move forward.  A healthy, catered lunch is included as well as dosha specific herbal teas and organic fresh juice.
                     </PStyled>
                 </SectionStyled>
 

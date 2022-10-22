@@ -6,7 +6,7 @@ import pkgs from '../../packageDetails';
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const disclaimer = `Ancient Ayurvedic wisdom used to design energetic healing 
+const disclaimer = `Ancient Ayurvedic wisdom is used to design energetic healing 
                     treatments and rituals for the mind, body and soul.  
                     Sacred bodywork such as massage, full body scrubs and wraps, 
                     yoni steaming, chakra cleansing, medicinal oils, herbs, sound 
@@ -14,7 +14,7 @@ const disclaimer = `Ancient Ayurvedic wisdom used to design energetic healing
                     some of the modalities that will be used during our time 
                     together.  Shirodhara will be included in all packages in order 
                     to awaken and cleanse your third eye to enhance your intuition 
-                    in your pursuit to move forward.  Healthy catered lunch is included
+                    in your pursuit to move forward.  A healthy, catered lunch is included
                     as well as dosha specific herbal teas and organic fresh juice.  
                     This is not a religious practice, it is a spiritual one.  We honor 
                     the individual, their thoughts, emotions and their personal experience.
@@ -264,9 +264,6 @@ function Packages() {
                                     </LiStyled>
                                     <LiStyled>
                                         Includes….Collagen tea latte, lunch, fresh organic juice
-                                    </LiStyled>
-                                    <LiStyled>
-                                        Sacred body work- Abhyanga or special massage that includes marma therapy and dosha specific medicinal oil
                                     </LiStyled>
                                     <LiStyled>
                                         And more!                                    

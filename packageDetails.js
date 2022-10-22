@@ -37,11 +37,11 @@ const packages = [
                 same person who walked in.  That’s what the storm is all about." 
                 -Haruki Murakami`,
         descr: `The energy of The Storm is sometimes also referred to as 
-                'The dark night of the soul',or in tarot this is the energy 
+                'The dark night of the soul', or in tarot this is the energy 
                 of the Tower card.  Are you experiencing powerful grief, 
                 depression or anxiety?  All three?  This package was designed 
                 to help you in the midst of it.  I want to help cleanse you of 
-                negative energy ,validate your feelings, help you process your 
+                negative energy, validate your feelings, help you process your 
                 emotions and explore options.  Seek shelter my friend. Go within. 
                 I created this healing practice after I made it through my own 
                 storm. Ayurveda was the bridge from surviving to thriving.`

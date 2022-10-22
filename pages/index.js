@@ -170,8 +170,8 @@ function Home() {
             >
               The science of life and the sister science to Yoga, Ayurveda is intentional, rhythmical, natural and spiritual. 
               Originating in India 5000 years ago, it pays special attention to the mind-body connection and reaches through 
-              all of the five senses as a portal between the internal and external rhealms.  Ayurveda is deep rooted wisdom 
-              that is focused on the five elements of ether, air, fire, water and earth.  This is medicine for your soul.  
+              all of the five senses as a portal between the internal and external realms.  Ayurveda is a deeply rooted wisdom 
+              focused on the five elements of ether, air, fire, water and earth.  This is medicine for your soul.  
               Ayurveda is thoughtful.  Ayurveda is powerful.  The packages that I have designed include treatments and rituals 
               that renewed my own spirit.
             </PStyled>
@@ -249,7 +249,7 @@ function Home() {
               Are you in the midst of a transformation? Do you have a broken heart?  Perhaps you are just thirsty for connection?  
               Whether you desire to raise your vibration for creativity or remove the blocks that are keeping you from manifesting the 
               life of your dreams, Energy of Jade was created for you!  Choose between our half and full day treatments. Each treatment 
-              is curated to each client and their needs. Click the button below to learn about what packages we offer.
+              is curated to the client and their needs. Click the button below to learn about the packages we offer.
             </PStyled>
             <Box
               sx={{
@@ -391,7 +391,7 @@ function Home() {
                 }
               }}
             >
-              Fill and submit our contact form and I'll get back to you at my earliest convenience!
+              Fill out and submit our contact form and I'll get back to you at my earliest convenience!
             </PStyled>
             <ButtonContainer>
               <LightButtonStyled size='small' href="/contact">

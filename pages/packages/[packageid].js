@@ -15,7 +15,7 @@ const disclaimer = `All healing packages will be customized to the client,
                     might take practicing radical acceptance.  Letting go is not
                     easy and takes a repeated conscious effort but it will
                     happen.  This act of will comes with much more ease when
-                    your channels are cleansed.   Ancient Ayurvedic wisdom used
+                    your channels are cleansed.   Ancient Ayurvedic wisdom is used
                     to design energetic healing treatments and rituals for the
                     mind, body and soul.  Sacred bodywork such as massage, full
                     body scrubs and wraps, yoni steaming, chakra cleansing,
@@ -24,7 +24,7 @@ const disclaimer = `All healing packages will be customized to the client,
                     that will be used during our time together.  Shirodhara
                     will be included in all packages in order to awaken and
                     cleanse your third eye to enhance your intuition in your
-                    pursuit to move forward.  Healthy catered lunch is included
+                    pursuit to move forward.  A healthy, catered lunch is included
                     as well as dosha specific herbal teas and organic fresh
                     juice.`;
 
