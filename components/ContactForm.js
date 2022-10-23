@@ -5,7 +5,7 @@ import { Grid, Button, Container } from "@mui/material";
 import { InputBase } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 const ButtonContainer = styled('div')({
     width: 25,

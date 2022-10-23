@@ -6,7 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - echo "BASE_URL=$BASE_URL" >> .env
+        - echo "NEXT_PUBLIC_BASE_URL=$BASE_URL" >> .env
         - echo "ACCESS_KEY_ID=$ACCESS_KEY_ID" >> .env
         - echo "LIST_ID=$LIST_ID" >> .env
         - echo "MAILCHIMP_API_KEY=$MAILCHIMP_API_KEY" >> .env
