@@ -6,13 +6,13 @@ frontend:
         - npm ci
     build:
       commands:
-        - echo "BASE_URL=$BASE_URL" >> .env
-        - echo "ACCESS_KEY_ID=$ACCESS_KEY_ID" >> .env
-        - echo "LIST_ID=$LIST_ID" >> .env
-        - echo "MAILCHIMP_API_KEY=$MAILCHIMP_API_KEY" >> .env
-        - echo "MAILCHIMP_SERVER=$MAILCHIMP_SERVER" >> .env
-        - echo "SECRET_ACCESS_KEY=$SECRET_ACCESS_KEY" >> .env
-        - npm run build
+        - npm run build:$BUILD_ENV
+        - echo "BASE_URL=$BASE_URL" >> backend/.env
+        - echo "ACCESS_KEY_ID=$ACCESS_KEY_ID" >> backend/.env
+        - echo "LIST_ID=$LIST_ID" >> backend/.env
+        - echo "MAILCHIMP_API_KEY=$MAILCHIMP_API_KEY" >> backend/.env
+        - echo "MAILCHIMP_SERVER=$MAILCHIMP_SERVER" >> backend/.env
+        - echo "SECRET_ACCESS_KEY=$SECRET_ACCESS_KEY" >> backend/.env
   artifacts:
     baseDirectory: .next
     files:
@@ -20,3 +20,5 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+
+      
