@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Grid, Button, InputBase } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 const ContainerStyled = styled('div')({
 
