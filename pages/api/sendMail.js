@@ -50,7 +50,9 @@ function sendMail(req, res) {
 
     const sendPromise = new AWS.SES({ apiVersion: '2010-12-01' })
                                 .sendEmail(params).promise();
-       
+
+    console.log("sendPromise", sendPromise);
+
     sendPromise.then(
         function (data) {
             console.log("message sent: ", data.MessageId);
@@ -58,6 +60,7 @@ function sendMail(req, res) {
         }).catch(
             function (err) {
                 console.error(err, err.stack);
+                res.status(400).json({ error: err });
             });
 }
 
