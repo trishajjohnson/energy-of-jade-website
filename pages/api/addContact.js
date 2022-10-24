@@ -15,28 +15,32 @@ async function addContact(req, res) {
   
   const subscribers = await mailchimp.lists.getListMembersInfo(listId);
   const member = subscribers.members.filter(member => member.email_address === email);
+  try {
+    if(member.length === 0) {
+      const response = await mailchimp.lists.addListMember(listId, {
+        email_address: email,
+        status: "subscribed"
+      });
 
-  if(member.length === 0) {
-    const response = await mailchimp.lists.addListMember(listId, {
-      email_address: email,
-      status: "subscribed"
-    });
+      res.status(200).json({ status: response.status, detail: "User successfully subscribed." })
+    }
 
-    res.status(200).json({ status: response.status, detail: "User successfully subscribed." })
-  }
+    else if(member[0].status === "unsubscribed") {
+      const subscriberHash = md5(email);
+      const response = await mailchimp.lists.updateListMember(listId, subscriberHash, {
+        status: "subscribed"
+      });
+      console.log("response for member update", response);
+      res.status(200).json({ status: "subscribed", detail: "User successfully subscribed." })
+    }
 
-  else if(member[0].status === "unsubscribed") {
-    const subscriberHash = md5(email);
-    const response = await mailchimp.lists.updateListMember(listId, subscriberHash, {
-      status: "subscribed"
-    });
-    console.log("response for member update", response);
-    res.status(200).json({ status: "subscribed", detail: "User successfully subscribed." })
-  }
-
-  else if(member[0].status === "subscribed") {
-    console.log("already subscribed backend");
-    res.json({ status: "already subscribed", detail: "You are already subscribed." })
+    else if(member[0].status === "subscribed") {
+      console.log("already subscribed backend");
+      res.status(400).json({ status: "already subscribed", detail: "You are already subscribed." })
+    }
+  } catch(err) {
+    console.error(err, err.stack);
+    res.status(400).json({ error: err });
   }
 }
 
