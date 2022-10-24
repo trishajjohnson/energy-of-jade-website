@@ -8,6 +8,8 @@ const packages = [
                 This package was designed to embody the goddess within.  Powerful self love.  
                 Connecting to your highest self and showing gratitude for your strength, 
                 resilience and inner beauty.`,
+        halfDayLink: "https://calendly.com/energy-of-jade/warrior-goddess-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/warrior-goddess-treatment-package-full-day"
     },
     {
         id: 'rumi',
@@ -24,6 +26,8 @@ const packages = [
                 to the Universe, Rumi is all about Love.  Experience Energy of 
                 Jade’s Rumi package with another by your side or on your own.  
                 Either way it will be magical!`,
+        halfDayLink: "https://calendly.com/energy-of-jade/rumi-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/rumi-treatment-package-full-day"
     },
     {
         id: 'storm',
@@ -44,7 +48,9 @@ const packages = [
                 negative energy, validate your feelings, help you process your 
                 emotions and explore options.  Seek shelter my friend. Go within. 
                 I created this healing practice after I made it through my own 
-                storm. Ayurveda was the bridge from surviving to thriving.`
+                storm. Ayurveda was the bridge from surviving to thriving.`,
+        halfDayLink: "https://calendly.com/energy-of-jade/storm-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/storm-treatment-package-full-day"
     },
     {
         id: 'rightOfPassage',
@@ -66,6 +72,8 @@ const packages = [
                 sweet 16 and baby showers.  Give the gift that will leave the 
                 ones closest to you feeling seen, appreciated and honored.  
                 Imagine the ripple effect.`,
+        halfDayLink: "https://calendly.com/energy-of-jade/right-of-passage-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/right-of-passage-treatment-package-full-day"
     },
     {
         id: 'phoenix',
@@ -81,6 +89,8 @@ const packages = [
                 many more occurrences. The time you spend with Energy of Jade 
                 will mark the beginning of a new chapter in your life. We can 
                 help you grieve what has been lost and welcome your resurrection.`,
+        halfDayLink: "https://calendly.com/energy-of-jade/phoenix-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/phoenix-treatment-package-full-day"
     },
     {
         id: 'muse',
@@ -99,6 +109,8 @@ const packages = [
                 ceremony, dive deep within, enter into flow state and marvel in 
                 creativity.  The muse can help assist you in clearing a path to 
                 manifestation while doing “the work”.`,
+        halfDayLink: "https://calendly.com/energy-of-jade/muse-treatment-package-half-day",
+        fullDayLink: "https://calendly.com/energy-of-jade/muse-treatment-package-full-day"
     }
 ];
 

@@ -72,7 +72,8 @@ const ButtonStyled = styled(Button)({
         border: '1px solid black',
         backgroundColor: 'black',
         boxShadow: '2px 2px 5px #434343',
-    }
+    },
+    margin: 10
 });
 
 const ButtonContainer = styled('div')({
@@ -120,10 +121,17 @@ function PackageDetails() {
             <ButtonContainer>
                 <ButtonStyled
                     size='large'
-                    href="https://calendly.com/energy-of-jade" 
+                    href={pkg.halfDayLink} 
                     target="_blank"
                 >
-                    Book Appointment
+                    Book Half Day
+                </ButtonStyled>
+                <ButtonStyled
+                    size='large'
+                    href={pkg.fullDayLink} 
+                    target="_blank"
+                >
+                    Book Full Day
                 </ButtonStyled>
             </ButtonContainer>
         </div>
