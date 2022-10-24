@@ -21,7 +21,7 @@ function sendMail(req, res) {
             CcAddresses: [
             ], 
             ToAddresses: [
-                "trishajjohnson@gmail.com"
+                "energy.of.jade@gmail.com"
             ]
         }, 
         Message: {
@@ -45,7 +45,7 @@ function sendMail(req, res) {
                 Data: `Message from <${name}> - Energy of Jade`
             }
         },
-        Source: "trishajjohnson@gmail.com", 
+        Source: "energy.of.jade@gmail.com", 
     };
 
     const sendPromise = new AWS.SES({ apiVersion: '2010-12-01' })
