@@ -7,7 +7,7 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const disclaimer = `Ancient Ayurvedic wisdom is used to design energetic healing 
-                    treatments and rituals for the mind, body and soul.  
+                    services and rituals for the mind, body and soul.  
                     Sacred bodywork such as massage, full body scrubs and wraps, 
                     yoni steaming, chakra cleansing, medicinal oils, herbs, sound 
                     therapy, along with guided meditation and oracle readings are 
@@ -135,9 +135,9 @@ function Packages() {
                     >
                         All healing packages will be customized to the client,
                         their constitution, needs and goals.  Please check out 
-                        the list of treatments and let me know if a certain one 
+                        the list of services and let me know if a certain one 
                         interests you.  We will have time to speak before the day 
-                        of treatment in order to create a package that will meet 
+                        of your appointment in order to create a package that will meet 
                         your needs.  Energy of Jade offers two types of packages: 
                         half and full day.  
                     </PStyled>

@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
 
-const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
+const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Services', path: 'services'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
 
 const FooterStyled = styled('div')({
     display: 'flex',

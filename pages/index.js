@@ -172,7 +172,7 @@ function Home() {
               Originating in India 5000 years ago, it pays special attention to the mind-body connection and reaches through 
               all of the five senses as a portal between the internal and external realms.  Ayurveda is a deeply rooted wisdom 
               focused on the five elements of ether, air, fire, water and earth.  This is medicine for your soul.  
-              Ayurveda is thoughtful.  Ayurveda is powerful.  The packages that I have designed include treatments and rituals 
+              Ayurveda is thoughtful.  Ayurveda is powerful.  The packages that I have designed include services and rituals 
               that renewed my own spirit.
             </PStyled>
           </Box>
@@ -248,7 +248,7 @@ function Home() {
             >  
               Are you in the midst of a transformation? Do you have a broken heart?  Perhaps you are just thirsty for connection?  
               Whether you desire to raise your vibration for creativity or remove the blocks that are keeping you from manifesting the 
-              life of your dreams, Energy of Jade was created for you!  Choose between our half and full day treatments. Each treatment 
+              life of your dreams, Energy of Jade was created for you!  Choose between our half and full day packages. Each service 
               is curated to the client and their needs. Click the button below to learn about the packages we offer.
             </PStyled>
             <Box
@@ -287,7 +287,7 @@ function Home() {
                     fontSize: 12
                   }}
                 >
-                  Half day treatment is approximately 3 hours and includes sacred body work, ayurvedic energy work and shirodhara.
+                  Half day package is approximately 3 hours and includes sacred body work, ayurvedic energy work and shirodhara.
                 </PStyled>
               </PackageCard>
               <PackageCard
@@ -318,7 +318,7 @@ function Home() {
                     fontSize: 12
                   }}
                 >
-                  Full day treatment is approximately 5 hours and includes sacred body work, ayurvedic energy work, Pinda 
+                  Full day package is approximately 5 hours and includes sacred body work, ayurvedic energy work, Pinda 
                   Swedana, shower, sound bath, shirodhara and much more.
                 </PStyled>
               </PackageCard>

@@ -138,7 +138,7 @@ function SubscribeForm() {
                         Let's Stay Connected!
                     </H2Styled>
                     <Paragraph>
-                        Keep up to date on what's new at Energy of Jade, specials, new packages and treatments, giveaways and much more.
+                        Keep up to date on what's new at Energy of Jade, specials, new packages and services, giveaways and much more.
                     </Paragraph>
                     {errors.map(error => {
                         return <ErrorStyled>{error}</ErrorStyled>

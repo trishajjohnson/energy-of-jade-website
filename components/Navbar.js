@@ -17,7 +17,7 @@ import Typography from '@mui/material/Typography';
 
 import { styled } from '@mui/material'
 
-const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Treatments', path: 'treatments'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
+const pages = [{name: 'Home', path: ''}, {name: 'Packages', path: 'packages'}, {name: 'Services', path: 'services'}, {name: 'Meet Jade', path: 'meet-jade'}, {name: 'Contact', path: 'contact'}];
 
 const AppBarStyled = styled(AppBar)({
   backgroundColor: 'black',
