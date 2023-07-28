@@ -54,29 +54,29 @@ const treatmentDetails = [
                     is a very powerful treatment.`,
             targetId: "netra-tarpana"
         },
-        {
-            id: "pinda-swedana",
-            name: "Pinda Swedana",
-            descr: `An Indian royal body treatment. Cloth bags filled with rice and made 
-                    into balls, then soaked in very hot milk and herbs are massaged all over 
-                    the body, causing you to sweat and then cool, then wrapped up with a mylar 
-                    sheet and set to soak in the skin.  A highly rejuvenating treatment that 
-                    helps awaken cellular energy, stimulating and detoxifying while wrapped 
-                    up in a cocoon.  Emerge renewed and nourished.`,
-            targetId: "pinda-swedana"
-        },
-        {
-            id: "udvartana",
-            name: "Udvartana",
-            descr: `A lymphatic massage that cleanses and increases circulation.  Either 
-                    powdered medicated herbs alone or added to oil, this treatment soothes 
-                    skin irritations and improves complexion.  Performed with intention, 
-                    this is an amazing treatment for scrubbing out the “old” and replenishing 
-                    your mind, body and soul with the “new”.  Removes excess toxins in the 
-                    lymphatic system while opening channels and is performed after the skin 
-                    has been conditioned.`,
-            targetId: "udvartana"
-        },
+        // {
+        //     id: "pinda-swedana",
+        //     name: "Pinda Swedana",
+        //     descr: `An Indian royal body treatment. Cloth bags filled with rice and made 
+        //             into balls, then soaked in very hot milk and herbs are massaged all over 
+        //             the body, causing you to sweat and then cool, then wrapped up with a mylar 
+        //             sheet and set to soak in the skin.  A highly rejuvenating treatment that 
+        //             helps awaken cellular energy, stimulating and detoxifying while wrapped 
+        //             up in a cocoon.  Emerge renewed and nourished.`,
+        //     targetId: "pinda-swedana"
+        // },
+        // {
+        //     id: "udvartana",
+        //     name: "Udvartana",
+        //     descr: `A lymphatic massage that cleanses and increases circulation.  Either 
+        //             powdered medicated herbs alone or added to oil, this treatment soothes 
+        //             skin irritations and improves complexion.  Performed with intention, 
+        //             this is an amazing treatment for scrubbing out the “old” and replenishing 
+        //             your mind, body and soul with the “new”.  Removes excess toxins in the 
+        //             lymphatic system while opening channels and is performed after the skin 
+        //             has been conditioned.`,
+        //     targetId: "udvartana"
+        // },
         {
             id: "basti",
             name: "Basti",

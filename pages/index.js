@@ -81,7 +81,7 @@ function Home() {
     <div>
       <Header />
 
-        <SectionStyled
+        {/* <SectionStyled
           sx={{
             backgroundColor: 'white',
             display: 'flex',
@@ -100,7 +100,7 @@ function Home() {
           <H1Styled>
             <SpanStyled sx={{ fontSize: 35 }}>Now is the time!  You found your way here….you are ready!</SpanStyled>
           </H1Styled>
-        </SectionStyled>
+        </SectionStyled> */}
 
         <SectionStyled
           sx={{
@@ -139,7 +139,7 @@ function Home() {
                 }               
               }}
             >
-              WHAT IS AYURVEDA?
+              WHAT IS ENERGY OF JADE?
             </H2Styled>
             <H2Styled
               sx={{
@@ -152,7 +152,7 @@ function Home() {
                 }
               }}
             >
-              An ancient healing modality that has survived the test of time.
+              A private wellness space in Santa Barbara.
             </H2Styled>
             <PStyled
               sx={{
@@ -168,17 +168,14 @@ function Home() {
                 }
               }}
             >
-              The science of life and the sister science to Yoga, Ayurveda is intentional, rhythmical, natural and spiritual. 
-              Originating in India 5000 years ago, it pays special attention to the mind-body connection and reaches through 
-              all of the five senses as a portal between the internal and external realms.  Ayurveda is a deeply rooted wisdom 
-              focused on the five elements of ether, air, fire, water and earth.  This is medicine for your soul.  
-              Ayurveda is thoughtful.  Ayurveda is powerful.  The packages that I have designed include services and rituals 
-              that renewed my own spirit.
+              Energy of Jade is a private wellness space located in Victoria Court, downtown Santa Barbara.  We are passionate about healing and transformation.
+              Our healing packages are custom made for you.  Our goal is to cultivate belonging by building community.  We offer our space at a reasonable rate to local healing artists to host their own 
+              private workshops and events.  
             </PStyled>
           </Box>
           <Box>
           <ImageStyled 
-            src="https://eojassets.s3.us-west-1.amazonaws.com/dominique-rivas-q3iVNEKJIyo-unsplash.jpeg" 
+            src="https://eojassets.s3.us-west-1.amazonaws.com/spa_promo_photo.jpeg" 
             sx={{
               height: 500,
               marginBottom: {

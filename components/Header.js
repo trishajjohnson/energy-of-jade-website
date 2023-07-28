@@ -60,9 +60,9 @@ function Header() {
             
             <HeaderText sx={{  }}>
                 <HeadingTitle sx={{ fontSize: {xs: 50, md: 90}, letterSpacing: {xs: 8, md: 14 } }}>Energy of Jade</HeadingTitle>
-                <HeadingSecondary sx={{ fontSize: {xs: 15, md: 25 }, letterSpacing: {xs: 6, md: 14} }}>Rejuvinate.Reinvent.Reclaim</HeadingSecondary>
+                <HeadingSecondary sx={{ fontSize: {xs: 15, md: 25 }, letterSpacing: {xs: 6, md: 14} }}>A wellness space in Santa Barbara</HeadingSecondary>
                 <div>
-                    <ButtonStyled size='large' href="https://calendly.com/energy-of-jade" target="_blank">
+                    <ButtonStyled size='large' href="https://calendly.com/energy-of-jade/phone-consult" target="_blank">
                         Book Your First Appointment
                     </ButtonStyled>
                 </div>

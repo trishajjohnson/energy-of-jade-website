@@ -76,7 +76,8 @@ const BlackHeaderDivider = styled('div')({
 
 const PStyled = styled('p')({
     margin: '0 25px',
-    textAlign: 'center'
+    textAlign: 'center',
+    // justifyContent: 'center'
 });
 
 const BreakBox = styled('div')({
@@ -141,7 +142,7 @@ function About() {
                
                 
                 <ImageStyled 
-                    src='https://eojassets.s3.us-west-1.amazonaws.com/meet_jade_4.jpg'
+                    src='https://eojassets.s3.us-west-1.amazonaws.com/jen_studio_hs_2.jpeg'
                     sx={{
                         borderRadius: 50,
                         height: {
@@ -211,7 +212,7 @@ function About() {
                         }
                     }}
                 >
-                    <ImageStyled 
+                    {/* <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/wc9.jpeg' 
                         sx={{ 
                             filter: 'brightness(90%)',
@@ -228,7 +229,7 @@ function About() {
                                 md: '50px'
                             }
                         }} 
-                    />
+                    /> */}
                     <PStyled
                         sx={{
                             margin: {
@@ -295,7 +296,7 @@ function About() {
                         serve others.  
 
                     </PStyled>
-                    <ImageStyled 
+                    {/* <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/natasha-holmes-jW7u8qRMClw-unsplash.jpeg' 
                         sx={{ 
                             filter: 'brightness(90%)',
@@ -311,7 +312,7 @@ function About() {
                                 md: '25px'
                             }
                         }} 
-                    />
+                    /> */}
                 </SectionStyled>
                 
                 <BlackHeaderDivider>
@@ -339,7 +340,7 @@ function About() {
                         }
                     }}
                 >
-                    <ImageStyled 
+                    {/* <ImageStyled 
                         src='https://eojassets.s3.us-west-1.amazonaws.com/wc11.jpeg' 
                         sx={{ 
                             width: {
@@ -355,7 +356,7 @@ function About() {
                                 md: '50px'
                             }
                         }} 
-                    />
+                    /> */}
                     <PStyled
                         sx={{
                             margin: {
@@ -418,7 +419,7 @@ function About() {
                             }
                         }}
                     >
-                        Ancient Ayurvedic wisdom is used to design energetic healing treatments and rituals for the mind, body 
+                        Ancient Ayurvedic wisdom is used to design energetic healing services and rituals for the mind, body 
                         and soul.  Sacred bodywork such as massage, full body scrubs and wraps, yoni steaming, chakra cleansing, 
                         medicinal oils, healing herbs, sound therapy, along with guided meditation, intentional rituals and oracle 
                         readings are some of the modalities that will be used during our time together.  Shirodhara will be included 

@@ -121,8 +121,18 @@ function Packages() {
 
     return (
             <ContainerStyled>
-                <HeaderContainer>
+                <HeaderContainer
+                    sx={{
+                        flexDirection: "column"
+                    }}
+                >
                     <Header>Packages</Header>
+                    <H2Styled
+                        sx={{
+                            color: "white",
+                            fontSize: 30
+                        }}
+                    >Grand Opening Special: $100 off all packages</H2Styled>
                 </HeaderContainer>
                 <SectionStyled>
                     <PStyled
@@ -251,10 +261,10 @@ function Packages() {
                                         Sacred body work- Abhyanga or special massage that includes marma therapy and dosha specific medicinal oil
                                     </LiStyled>
                                     <LiStyled>
-                                        Pinda Swedana (body wrap including facial mask)                                    
+                                        Private yoga session                                    
                                     </LiStyled>
                                     <LiStyled>
-                                        Shower                                    
+                                        Guided meditation                                    
                                     </LiStyled>
                                     <LiStyled>
                                         Ayurvedic energy work (chakra cleansing with medicinal oil made specifically for client)                                    
