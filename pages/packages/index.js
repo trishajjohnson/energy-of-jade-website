@@ -135,6 +135,15 @@ function Packages() {
                     >Grand Opening Special: $100 off all packages</H2Styled>
                 </HeaderContainer>
                 <SectionStyled>
+                    <CardContainer>
+                        {pkgs.map((p, i) => {
+                            return (
+                                <Card item key={i} xs={12} md={6}>
+                                    <TreatmentPackage sx={{mx: "auto"}} pkg={p} />
+                                </Card>
+                            );
+                        })}
+                    </CardContainer>
                     <PStyled
                         sx={{
                             width: {
@@ -294,15 +303,7 @@ function Packages() {
                     </PStyled>
                     
                 </SectionStyled>
-                <CardContainer>
-                    {pkgs.map((p, i) => {
-                        return (
-                            <Card item key={i} xs={12} md={6}>
-                                <TreatmentPackage sx={{mx: "auto"}} pkg={p} />
-                            </Card>
-                        );
-                    })}
-                </CardContainer>
+                
             </ContainerStyled>
     );
 }

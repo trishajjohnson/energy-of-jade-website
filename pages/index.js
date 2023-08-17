@@ -101,90 +101,110 @@ function Home() {
             <SpanStyled sx={{ fontSize: 35 }}>Now is the time!  You found your way here….you are ready!</SpanStyled>
           </H1Styled>
         </SectionStyled> */}
-
         <SectionStyled
           sx={{
-            backgroundColor: 'black',
-            flexDirection: {
-              xs: 'column',
-              md: 'row'
-            },
-            margin: {
-              xs: '25px auto 0',
-              md: '100px'
-            },
-            padding: {
-              xs: 0,
-              md: 10
-            }
           }}
         >
-          <Box
+          <SectionStyled
             sx={{
               backgroundColor: 'black',
-              textAlign: {
-                xs: 'center',
-                md: 'left'
-              }
+              flexDirection: {
+                xs: 'column',
+                md: 'row'
+              },
+              margin: {
+                xs: '25px auto 0',
+                md: '100px'
+              },
+              padding: {
+                xs: 0,
+                md: 10
+              },
+              width: '90%'
             }}
           >
-            <H2Styled
+            <Box
               sx={{
-                color: '#09db8b',
-                fontSize: 18,
-                fontWeight: 400 ,
-                marginTop: {
-                  xs: 5,
-                  md: 0
-                }               
-              }}
-            >
-              WHAT IS ENERGY OF JADE?
-            </H2Styled>
-            <H2Styled
-              sx={{
-                color: 'white',
-                fontSize: 28,
-                fontWeight: 'bold',
+                backgroundColor: 'black',
+                textAlign: {
+                  xs: 'center',
+                  md: 'left'
+                },
+                // margin: 5,
                 width: {
                   xs: '100%',
-                  md: 600
+                  md: '50%'
                 }
               }}
             >
-              A private wellness space in Santa Barbara.
-            </H2Styled>
-            <PStyled
+              <H2Styled
+                sx={{
+                  color: '#09db8b',
+                  fontSize: 18,
+                  fontWeight: 400,
+                  marginTop: {
+                    xs: 5,
+                    md: 0
+                  }               
+                }}
+              >
+                WHAT IS ENERGY OF JADE?
+              </H2Styled>
+              <H2Styled
+                sx={{
+                  color: 'white',
+                  fontSize: 28,
+                  fontWeight: 'bold',
+                  // width: {
+                  //   xs: '100%',
+                  //   md: '100%'
+                  // }
+                }}
+              >
+                A private wellness space in Santa Barbara.
+              </H2Styled>
+              <PStyled
+                sx={{
+                  color: 'white',
+                  fontWeight: 200,
+                  margin: {
+                    xs: '0 auto 25px',
+                    md: 0
+                  },
+                  width: {
+                    xs: '90%',
+                    md: '80%'
+                  }
+                }}
+              >
+                Energy of Jade is a private wellness space located on Victoria Court, downtown Santa Barbara.  We are passionate about healing and transformation.
+                Our healing packages are custom made for you.  Our goal is to cultivate belonging by building community.  We offer our space at a reasonable rate to local healing artists to host their own 
+                private workshops and events.  
+              </PStyled>
+            </Box>
+            <Box
               sx={{
-                color: 'white',
-                fontWeight: 200,
-                margin: {
-                  xs: '0 auto 25px',
-                  md: 0
-                },
                 width: {
-                  xs: '90%',
-                  md: '80%'
+                  xs: '95%',
+                  md: '50%'
                 }
               }}
             >
-              Energy of Jade is a private wellness space located in Victoria Court, downtown Santa Barbara.  We are passionate about healing and transformation.
-              Our healing packages are custom made for you.  Our goal is to cultivate belonging by building community.  We offer our space at a reasonable rate to local healing artists to host their own 
-              private workshops and events.  
-            </PStyled>
-          </Box>
-          <Box>
-          <ImageStyled 
-            src="https://eojassets.s3.us-west-1.amazonaws.com/spa_promo_photo.jpeg" 
-            sx={{
-              height: 500,
-              marginBottom: {
-                xs: 5,
-                md: 0
-              }
-            }}  
-          />
-          </Box>
+            <ImageStyled 
+              src="https://eojassets.s3.us-west-1.amazonaws.com/spa_promo_photo.jpeg" 
+              sx={{
+                // height: '50%',
+                // width: {
+                //   xs: '100%'
+                // },
+                marginBottom: {
+                  xs: 5,
+                  md: 0
+                }
+              }}  
+            />
+            </Box>
+          </SectionStyled>
         </SectionStyled>
 
         <SectionStyled
@@ -315,8 +335,8 @@ function Home() {
                     fontSize: 12
                   }}
                 >
-                  Full day package is approximately 5 hours and includes sacred body work, ayurvedic energy work, Pinda 
-                  Swedana, shower, sound bath, shirodhara and much more.
+                  Full day package is approximately 5 hours and includes sacred body work, ayurvedic energy work, yoga, guided meditation, 
+                  sound bath, shirodhara, lunch and more.
                 </PStyled>
               </PackageCard>
             </Box>

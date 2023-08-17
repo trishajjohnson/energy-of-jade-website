@@ -5,7 +5,7 @@ const treatmentDetails = [
             descr: `Classic Ayurvedic hot oil massage.  Gentle and rhythmical
                     massage with medicated oil. Rejuvenates and cleanses lymphatically 
                     and energetically.  Often performed by two therapists at one time working 
-                    in synchrony.`,
+                    in synchrony.  Included in package only.`,
             targetId: "abhyanga"
         },
         {
@@ -14,7 +14,7 @@ const treatmentDetails = [
             descr: `The pouring of medicated oil over your Third-eye chakra and Ajna marma 
                     point.  Results in a psycho-somatic balance and meditative state.  
                     Addresses the nervous and endocrine systems, activates the pituitary 
-                    gland and enhances brain chemistry.  Awaken your intuition.`,
+                    gland and enhances brain chemistry.  Awaken your intuition.  Included in package only.`,
             targetId: "shirodhara"
         },
         {
@@ -78,15 +78,15 @@ const treatmentDetails = [
         //     targetId: "udvartana"
         // },
         {
-            id: "basti",
-            name: "Basti",
-            descr: `A chickpea dough barrier positioned around a chakra and filled with 
-                    specific medicinal oils prepared specifically for the client and their 
-                    needs. Cleansing ritual that is powerful energetically for the throat, 
+            id: "chakra-cleanse",
+            name: "Chakra Cleanse",
+            descr: `Basti, or chakra cleansing, involves a chickpea dough barrier positioned 
+                    around a chakra and filled with medicinal oils prepared specifically for the client. 
+                    This is a cleansing ritual that is powerful energetically for the throat, 
                     heart, solar plexus and sacral chakras and all the emotions that one may 
                     find there.  Subtle, yet very powerful and effective while doing the 
                     “work”.`,
-            targetId: "basti"
+            targetId: "chakra-cleanse"
         },
         {
             id: "marma-therapy",
@@ -110,10 +110,15 @@ const treatmentDetails = [
             targetId: "binaural-beats"
         },
         {
-            id: "massage-therapy",
-            name: "Massage Therapy",
-            descr: `Deep tissue, cranial sacral, reflexology, Swedish massage with hot towel 
-                    therapy and aromatherapy.`,
+            id: "massage",
+            name: "Energy of Jade Massage",
+            descr: `Go to the place between awake and asleep and linger there.  Over 20 years of experience
+                    and a plethora of techniques, Energy of Jade's massage includes steam, back exfoliation, 
+                    hot towel therapy, aroma therapy and guided meditation that allows you to get out of your head, 
+                    into your body then leave them both behind.
+                    
+                    60 minutes $185
+                    90 minutes $210`,
             targetId: "massage-therapy"
         },
         {

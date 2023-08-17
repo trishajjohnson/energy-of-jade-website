@@ -40,7 +40,7 @@ function Treatments() {
     return (
         <div>
             <HeaderContainer>
-                <Header>Services</Header>
+                <Header>Description of Services</Header>
             </HeaderContainer>
             <TreatmentContainer>
                 <Container sx={{ width: {xs: 'none', md: '50%' }}}>

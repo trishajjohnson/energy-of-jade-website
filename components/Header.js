@@ -63,7 +63,7 @@ function Header() {
                 <HeadingSecondary sx={{ fontSize: {xs: 15, md: 25 }, letterSpacing: {xs: 6, md: 14} }}>A wellness space in Santa Barbara</HeadingSecondary>
                 <div>
                     <ButtonStyled size='large' href="https://calendly.com/energy-of-jade/phone-consult" target="_blank">
-                        Book Your First Appointment
+                        Book Free Consult
                     </ButtonStyled>
                 </div>
             </HeaderText>

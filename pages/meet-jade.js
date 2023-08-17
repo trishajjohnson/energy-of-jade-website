@@ -43,7 +43,8 @@ const SubHeader = styled('h3')({
 
 
 const ImageStyled = styled('img')({
-    margin: '25px auto'
+    // height: '80vh'
+    // margin: '25px auto'
 });
 
 const BodyStyled = styled('div')({
@@ -55,8 +56,8 @@ const SectionStyled = styled('div')({
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 50,
-    marginTop: 50
+    marginBottom: 25,
+    marginTop: 25
     
 });
 
@@ -116,7 +117,7 @@ function About() {
                         }
                     }}
                 >
-                    <SubHeader
+                    {/* <SubHeader
                         sx={{
                             fontSize: {
                                 xs: 18,
@@ -137,18 +138,45 @@ function About() {
                         }}
                     >
                         Jade
-                    </Header>
+                    </Header> */}
                 </HeaderBox>
                
                 
                 <ImageStyled 
+                    sx={{
+                        width: '25%'
+                    }}
+                    src='https://eojassets.s3.us-west-1.amazonaws.com/DSC01464.jpeg'
+                    // sx={{
+                    //     borderRadius: 50,
+                    //     height: {
+                    //         xs: 300,
+                    //         md: 500
+                    //     }
+                    // }}
+                /> 
+                <ImageStyled
+                    sx={{
+                        width: '50%'
+                    }} 
+                    src='https://eojassets.s3.us-west-1.amazonaws.com/DSC01427.jpeg'
+                    // sx={{
+                    //     borderRadius: 50,
+                    //     height: {
+                    //         xs: 300,
+                    //         md: 500
+                    //     }
+                    // }}
+                /> 
+                <ImageStyled 
                     src='https://eojassets.s3.us-west-1.amazonaws.com/jen_studio_hs_2.jpeg'
                     sx={{
-                        borderRadius: 50,
-                        height: {
-                            xs: 300,
-                            md: 500
-                        }
+                        width: '25%'
+                        // borderRadius: 50,
+                        // height: {
+                        //     xs: 300,
+                        //     md: 500
+                        // }
                     }}
                 /> 
             </HeaderContainer>
@@ -158,7 +186,7 @@ function About() {
                         flexDirection: 'column'
                     }}
                 >
-                    <H2Styled
+                    {/* <H2Styled
                         sx={{
                             fontStyle: 'italic'
                         }}
@@ -171,7 +199,7 @@ function About() {
                         }}
                     >
                         <HrStyled/>
-                    </BreakBox>
+                    </BreakBox> */}
                     <PStyled
                         sx={{
                             width: {
@@ -179,15 +207,19 @@ function About() {
                             }
                         }}
                     >
-                        Are you in the midst of a transformation? Do you have a broken heart? Are you experiencing 
-                        the “dark night of the soul”?   Are you thirsty for connection?  Striving for authenticity?  
-                        Reinventing yourself? Wanting to raise your vibration, enter a flow state, remove blocks for 
-                        manifestation?
+                        My name is Jennifer Westbrook and some know me as Jade.
+                        Like all of you, I am no stranger to life’s challenges.  
+                        I consider myself to be a Phoenix.  I have overcome extreme 
+                        clinical depression, addiction, negative core beliefs and toxic 
+                        relationships. Because of that, I know my strength and I have a 
+                        burning desire to help others transform their lives the way that 
+                        I have.
+
 
                     </PStyled>
                 </SectionStyled>
 
-                <BlackHeaderDivider>
+                {/* <BlackHeaderDivider>
                     <H2Styled
                         sx={{
                             color: 'white',
@@ -198,18 +230,11 @@ function About() {
                     >
                         ENERGY OF JADE WAS CREATED FOR YOU!  
                     </H2Styled>
-                </BlackHeaderDivider>
+                </BlackHeaderDivider> */}
                 
                 <SectionStyled
                     sx={{
-                        flexDirection: {
-                            xs: 'column',
-                            md: 'row'
-                        },
-                        marginTop: {
-                            xs: 0,
-                            md: '50px'
-                        }
+                        flexDirection: 'column'
                     }}
                 >
                     {/* <ImageStyled 
@@ -232,68 +257,46 @@ function About() {
                     /> */}
                     <PStyled
                         sx={{
-                            margin: {
-                                md: '0 50px'
-                            },
                             width: {
-                                xs: '95%',
                                 md: '60%'
                             }
                         }}
                     >
-                        I have been a healer for 20 years.  I studied Massage and Reiki and have worked in spas all over California.  
-                        It wasn’t until I found and studied Ayurveda, that I went from surviving to thriving.  I changed.  There had 
-                        been a shift in perspective.  Betrayal, rejection and heartbreak became blessings.  Layer after layer was peeled 
-                        back energetically.  I received visions and revelations.  I found clarity.  I was finally able to let go of 
-                        resentments and forgive.  What a relief!  I had hope.  I was bursting with enthusiasm and inspiration!
+                        I have been a healing artist for 20 years.  I studied massage and 
+                        Reiki and have worked in wellness centers all over California. 
+                        There came a time when I knew I wanted to change everything.  I 
+                        wanted to reinvent myself and thrive.  I wanted to be happy.  I 
+                        wanted to be the best version of myself.  I learned more about energy 
+                        healing and chakras.  I began investing in myself and running towards 
+                        healing.  Learning about Ayurvedic chakra work was a real game changer 
+                        for me.  I fell in love with meditation.  I began to understand myself.  
+                        I became very aware of the energy within my body and I learned how to work 
+                        with that awareness instead of reacting to my nervous system.  My perspective 
+                        began to shift.  Layer after layer was peeled back energetically.  I am a 
+                        new person, honoring my past self and striving to be my most magnetic self, 
+                        whom I named Jade.
                     </PStyled>
                 </SectionStyled>
                 
-                <BlackHeaderDivider>
-                    <H2Styled
-                        sx={{
-                            color: 'white',
-                            fontStyle: 'italic',
-                            marginTop: 20,
-                            marginBottom: 20
-                        }}
-                    >
-                        <em>Who am I?</em>   
-                    </H2Styled>
-                </BlackHeaderDivider>
-                
                 <SectionStyled
                     sx={{
-                        flexDirection: {
-                            xs: 'column',
-                            md: 'row'
-                        },
-                        marginBottom: {
-                            xs: 0,
-                            md: '50px'
-                        }
+                        flexDirection: 'column'
                     }}
                 >
                     <PStyled
                         sx={{
-                            margin: {
-                                md: '0 50px'
-                            },
                             width: {
-                                xs: '95%',
                                 md: '60%'
                             }
                         }}
                     >
-                        I am Jade. I am a Phoenix.  An overcomer.  A survivor!  And I am here to help.  Like you, I am no stranger to life’s 
-                        challenges.  The struggle is real. I have overcome extreme clinical depression, addiction, self destructive patterns 
-                        and toxic relationships. Because of that, I know my strength.  I came to the place where I had to tear my life down 
-                        in order to build it back up.  A part of me had to die in order for me to live.  I tried several healing modalities, 
-                        therapy and medication.  Thankfully, I found Ayurveda. I stand in awe of what has transpired in my own story. Now, I 
-                        spend my time and energy feeding the warrior goddess within as a mother and a healer.  My desire is to be the conduit 
-                        of light that is needed for healing.  I actively search for the magic in life and I know for certain that I am deeply 
-                        loved by the universe.  I make choices everyday that enhance the connection from my heart to my intuition, in order to 
-                        serve others.  
+                        Energy of Jade was created because I want everyone to experience what I did…revelations, 
+                        clarity, a new found hope and love for life.  I learned to love myself.  I stand in awe 
+                        of what has transpired in my own story.  I want to hear your story while I hold space for 
+                        you.  I want to stand with you while you reclaim what has been lost and celebrate your 
+                        transformation.  I can promise you that I wont judge you.  You can trust me.  I will serve 
+                        you to the best of my ability.  If you are struggling I want you to know that there is hope 
+                        and a stronger version of yourself on the other side of what is happening now.  
 
                     </PStyled>
                     {/* <ImageStyled 
@@ -313,67 +316,6 @@ function About() {
                             }
                         }} 
                     /> */}
-                </SectionStyled>
-                
-                <BlackHeaderDivider>
-                    <H2Styled
-                        sx={{
-                            color: 'white',
-                            fontStyle: 'italic',
-                            marginTop: 20,
-                            marginBottom: 20
-                        }}
-                    >
-                        <em>Invest in yourself, you are worth it!</em>  
-                    </H2Styled>
-                </BlackHeaderDivider>
-                
-                <SectionStyled
-                    sx={{
-                        flexDirection: {
-                            xs: 'column',
-                            md: 'row'
-                        },
-                        marginTop: {
-                            xs: 0,
-                            md: '50px'
-                        }
-                    }}
-                >
-                    {/* <ImageStyled 
-                        src='https://eojassets.s3.us-west-1.amazonaws.com/wc11.jpeg' 
-                        sx={{ 
-                            width: {
-                                xs: '100%',
-                                md: 500
-                            },
-                            marginTop: {
-                                xs: 0,
-                                md: '25px'
-                            },
-                            marginLeft: {
-                                xs: 0,
-                                md: '50px'
-                            }
-                        }} 
-                    /> */}
-                    <PStyled
-                        sx={{
-                            margin: {
-                                md: '0 50px'
-                            },
-                            width: {
-                                xs: '95%',
-                                md: '60%'
-                            }
-                        }}
-                    >
-                        I created Energy of Jade for those who want to connect to Source and to reconnect with themselves.  For the 
-                        broken hearted and for those who want to reclaim what has been lost.  A person can have great success with 
-                        these ancient healing practices in all stages of life.  One may find it helpful in reflection, self awareness 
-                        and self exploration.  The most powerful contributing factor to your experience in life will be the way that 
-                        you treat yourself…self love and care.
-                    </PStyled>
                 </SectionStyled>
                 
                 <BlackHeaderDivider>
