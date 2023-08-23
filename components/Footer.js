@@ -191,6 +191,8 @@ function Footer() {
                             1234 Main Street
                         </BusinessAddress> */}
                         <BusinessAddress>
+                            Victoria Court
+                            <br />
                             Santa Barbara, CA 93109
                         </BusinessAddress>
                         <BusinessAddress>
@@ -205,8 +207,8 @@ function Footer() {
                             FOLLOW US
                         </SocialHeader>
                         <SocialIcons>
-                            <a href="https://www.instagram.com/"><InstagramIcon sx={{color: '#F9F9F9', marginRight: 1}} fontSize='medium' /></a>
-                            <a href="https://www.facebook.com/"><FacebookIcon sx={{color: '#F9F9F9', marginLeft: 1}} fontSize='medium' /></a>
+                            <a href="https://www.instagram.com/energy_of_jade"><InstagramIcon sx={{color: '#F9F9F9', marginRight: 1}} fontSize='medium' /></a>
+                            {/* <a href="https://www.facebook.com/"><FacebookIcon sx={{color: '#F9F9F9', marginLeft: 1}} fontSize='medium' /></a> */}
                         </SocialIcons>
                 </SociaMediaContainer>
             </TopFooterContainer>

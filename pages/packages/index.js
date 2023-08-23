@@ -126,13 +126,23 @@ function Packages() {
                         flexDirection: "column"
                     }}
                 >
-                    <Header>Packages</Header>
+                    <Header
+                        sx={{
+                            margin: 0
+                        }}
+                    >
+                        Packages
+                    </Header>
                     <H2Styled
                         sx={{
-                            color: "white",
-                            fontSize: 30
+                            color: "#09db8b",
+                            fontSize: 30,
+                            margin: 0,
+                            fontWeight: 400
                         }}
-                    >Grand Opening Special: $100 off all packages</H2Styled>
+                    >
+                        Grand Opening Special: $100 off all packages
+                    </H2Styled>
                 </HeaderContainer>
                 <SectionStyled>
                     <CardContainer>

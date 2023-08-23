@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'next/link';
 import Header from '../components/Header';
 import SubscribeForm from '../components/SubscribeForm';
 
@@ -75,6 +76,11 @@ const SpanStyled = styled('span')({
   fontSize: 30,
   fontWeight: 600,
 })
+
+const LinkStyled = styled('a')({
+  color: "#09db8b",
+  textDecoration: 'none'
+});
 
 function Home() {
   return (
@@ -177,7 +183,7 @@ function Home() {
                   }
                 }}
               >
-                Energy of Jade is a private wellness space located on Victoria Court, downtown Santa Barbara.  We are passionate about healing and transformation.
+                Energy of Jade is a private wellness space located in Victoria Court, downtown Santa Barbara.  We are passionate about healing and transformation.
                 Our healing packages are custom made for you.  Our goal is to cultivate belonging by building community.  We offer our space at a reasonable rate to local healing artists to host their own 
                 private workshops and events.  
               </PStyled>
@@ -339,6 +345,39 @@ function Home() {
                   sound bath, shirodhara, lunch and more.
                 </PStyled>
               </PackageCard>
+              <PackageCard
+                sx={{
+                  height: 350,
+                  width: {
+                    xs: '80%',
+                    md: 300
+                  },
+                  margin: {
+                    xs: '25px auto',
+                    md: '0 20px'
+                  }
+                }}
+              >
+                <H2Styled
+                  sx={{
+                    fontWeight: 500
+                  }}
+                >
+                  INDIVIDUAL SERVICES
+                </H2Styled>
+                <HrStyled />
+                <PStyled
+                  sx={{
+                    color: 'white',
+                    fontWeight: 100,
+                    fontSize: 12
+                  }}
+                >
+                  Select services may be booked individually.  To see a list of services and their
+                  descriptions, click <LinkStyled href={`/services`}>here</LinkStyled>.
+                </PStyled>
+              </PackageCard>
+              
             </Box>
             <ButtonContainer>
               <LightButtonStyled 
