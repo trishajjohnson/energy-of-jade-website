@@ -1,12 +1,24 @@
 const treatmentDetails = [
+        // {
+        //     id: "abhyanga",
+        //     name: "Abhyanga",
+        //     descr: `Classic Ayurvedic hot oil massage.  Gentle and rhythmical
+        //             massage with medicated oil. Rejuvenates and cleanses lymphatically 
+        //             and energetically.  Often performed by two therapists at one time working 
+        //             in synchrony.  Included in package only.`,
+        //     targetId: "abhyanga"
+        // },
         {
-            id: "abhyanga",
-            name: "Abhyanga",
-            descr: `Classic Ayurvedic hot oil massage.  Gentle and rhythmical
-                    massage with medicated oil. Rejuvenates and cleanses lymphatically 
-                    and energetically.  Often performed by two therapists at one time working 
-                    in synchrony.  Included in package only.`,
-            targetId: "abhyanga"
+            id: "massage",
+            name: "Energy of Jade Massage",
+            descr: `Go to the place between awake and asleep and linger there.  Over 20 years of experience
+                    and a plethora of techniques, Energy of Jade's massage includes steam, back exfoliation, 
+                    hot towel therapy, aroma therapy and guided meditation that allows you to get out of your head, 
+                    into your body then leave them both behind.
+                    
+                    60 minutes $185
+                    90 minutes $210`,
+            targetId: "massage-therapy"
         },
         {
             id: "shirodhara",
@@ -14,7 +26,10 @@ const treatmentDetails = [
             descr: `The pouring of medicated oil over your Third-eye chakra and Ajna marma 
                     point.  Results in a psycho-somatic balance and meditative state.  
                     Addresses the nervous and endocrine systems, activates the pituitary 
-                    gland and enhances brain chemistry.  Awaken your intuition.  Included in package only.`,
+                    gland and enhances brain chemistry.  Awaken your intuition. 60 minutes $165`,
+            // prices: {
+                
+            // }
             targetId: "shirodhara"
         },
         {
@@ -108,18 +123,6 @@ const treatmentDetails = [
                     depending on the tones used and are thought to encourage relaxation, 
                     promote positivity and focus. Relieves anxiety.`,
             targetId: "binaural-beats"
-        },
-        {
-            id: "massage",
-            name: "Energy of Jade Massage",
-            descr: `Go to the place between awake and asleep and linger there.  Over 20 years of experience
-                    and a plethora of techniques, Energy of Jade's massage includes steam, back exfoliation, 
-                    hot towel therapy, aroma therapy and guided meditation that allows you to get out of your head, 
-                    into your body then leave them both behind.
-                    
-                    60 minutes $185
-                    90 minutes $210`,
-            targetId: "massage-therapy"
         },
         {
             id: "sound-therapy",
