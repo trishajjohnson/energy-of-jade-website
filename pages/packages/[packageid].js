@@ -121,6 +121,13 @@ function PackageDetails() {
             <ButtonContainer>
                 <ButtonStyled
                     size='large'
+                    href='https://calendly.com/energy-of-jade/phone-consult'
+                    target="_blank"
+                >
+                    Book Phone Consult
+                </ButtonStyled>
+                {/* <ButtonStyled
+                    size='large'
                     href={pkg.halfDayLink} 
                     target="_blank"
                 >
@@ -132,7 +139,7 @@ function PackageDetails() {
                     target="_blank"
                 >
                     Book Full Day
-                </ButtonStyled>
+                </ButtonStyled> */}
             </ButtonContainer>
         </div>
        
