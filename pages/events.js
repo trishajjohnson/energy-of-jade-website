@@ -152,38 +152,27 @@ function Events() {
     const [eventsList, setEventsList] = useState(events);
     const [filter, setFilter] = useState('Upcoming');
 
-    
-    useEffect(() => {
-        switch(filter) {
-            case 'Past':
-                setEventsList(events.filter(evt => Date.parse(evt.date) < new Date().getTime()));
-            case 'Upcoming':  
-                setEventsList(events.filter(evt => Date.parse(evt.date) > new Date().getTime()));
-            case "Recurring":
-                setEventsList(events.filter(evt => evt.isRecurring === true));
-            default:
-                setEventsList(events);
-        }
-        // switch(filter) {
-        //     case 'Past':
-        //         setFilterFunction(() => evt => Date.parse(evt.date) < new Date().getTime());
-        //         break;
-        //     case 'Upcoming':  
-        //         setFilterFunction(() => evt => Date.parse(evt.date) > new Date().getTime());
-        //     case "Recurring":
-        //         setFilterFunction(() => evt => evt.isRecurring === true);
-        //     default:
-        //         setFilterFunction(() => evt => true);
-        // }
-    }, [filter]);
-                
-                
-    const handleChange = (evt, newValue) => {
-        setFilter(newValue.props.value);
+    let filteredEvents;
+   
+    switch(filter) {
+        case 'Past':
+            filteredEvents = eventsList.filter(evt => Date.parse(evt.date) < new Date().getTime());
+            break;
+        case 'Upcoming':
+            filteredEvents = eventsList.filter(evt => Date.parse(evt.date) > new Date().getTime());
+            break;
+        case 'Recurring':
+            filteredEvents = eventsList.filter(evt => evt.isRecurring === true);
+            break;
+        default:
+            filteredEvents = eventsList;
     }
 
-    const filteredEvents = eventsList.filter(filterFunction);
-    console.log(Date.parse(events[0].date), new Date().getTime());
+                
+                
+    const handleChange = evt => {
+        setFilter(evt.target.value);
+    }
 
     return (
 
@@ -211,7 +200,7 @@ function Events() {
                     </Select>
                 </FormControl>
                 </FilterContainer>
-                {eventsList.map((evt, i) => {
+                {filteredEvents.map((evt, i) => {
                     return (
                         <CardStyled 
                             item 
